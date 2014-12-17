@@ -1,0 +1,38 @@
+
+
+/************************************************/
+/******************** Clears ********************/
+/************************************************/
+.clearer:after,
+.header:after,
+#nav:after,
+.main:after,
+.footer:after,
+.col-main:after,
+.col2-set:after,
+.col3-set:after,
+.col4-set:after,
+.mini-products-list li:after,
+.sidebar .block .actions:after,
+.sidebar .block-poll li:after,
+.sidebar .block-related li:after,
+.sidebar .block-related .item:after,
+.title-buttons:after,
+.pager:after,
+.sorter:after,
+.ratings:after,
+.add-to-box:after,
+.add-to-cart:after,
+.product-essential:after,
+.products-list .item:after,
+.product-view .product-img-box .more-views ul:after,
+.product-options .options-list li:after,
+.product-review:after,
+.cart:after,
+.one-page-checkout .step-title:after,
+.checkout-progress:after,
+.field-100:after,
+.group-select li:after,
+.form-list li:after,
+.buttons-set:after,
+.page-print .print-head:after { display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
