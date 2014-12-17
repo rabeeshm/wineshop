@@ -1,0 +1,13 @@
+/*!
+ *@author : rabeesh@confianzit.biz
+ */
+function redirectToList(code) {
+    jQuery.ajax({
+        type: "POST",
+        url: "http://www.ecdk.dk/index.php/regions/region/getRegion",
+        data: "code=" + code,
+        success: function(data) {
+            window.location.href = data;
+        }
+    });
+}

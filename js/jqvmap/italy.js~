@@ -1,0 +1,20 @@
+jQuery(document).ready(function() {
+    jQuery('#vmap').vectorMap({
+        map: 'italy_en',
+        onRegionClick: function(element, code, region)
+        {
+            var message = 'You clicked "'
+                    + region
+                    + '" which has the code: '
+                    + code.toUpperCase();
+            alert(message);
+        }
+    });
+});
+function markSelected(code) {
+    if (!code || code == 'ita' || code =='product')
+        return;
+    jQuery(document).ready(function() {
+        jQuery('#vmap').vectorMap('select', code);
+    });
+}
