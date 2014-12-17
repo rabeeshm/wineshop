@@ -60,7 +60,7 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
             $data['city'] = $element['city'];
             $pickupPoints[] = $data;
         }
-        Mage::getSingleton('core/session')->setPickPoints($pickupPoints);        
+        Mage::getSingleton('core/session')->setPickPoints($pickupPoints);
         return $result;
     }
 
@@ -163,8 +163,8 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
             $data['zip'] = $zip;
 
             //setting session variable names
-            $setPricevar = "setPrice" . $shippingMethod.'_'.$zip;
-            $setTitlevar = "setTitle" . $shippingMethod.'_'.$zip;
+            $setPricevar = "setPrice" . $shippingMethod . '_' . $zip;
+            $setTitlevar = "setTitle" . $shippingMethod . '_' . $zip;
             $priceElements = $this->xml2array($element->Price->PackagePriceWithAdditionalServices->AmountWithVAT);
             $titleElements = $this->xml2array($element->GuiInformation->DisplayName);
             // save price and title to session
@@ -194,8 +194,6 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
         $rate->setMethodTitle($element->GuiInformation->DisplayName);
         $rate->setPrice($element->Price->PackagePriceWithAdditionalServices->AmountWithVAT);
         $rate->setCost(0);
-
-
         return $rate;
     }
 
@@ -219,7 +217,8 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
         $rate->setMethod('defualt_pickuppoint');
 
         $getVar = Mage::getSingleton('core/session')->getPickupointKey();
-        //Mage::log(print_r($getVar, true), null, 'shipment1.log', true);
+        //Mage::log("after", null, 'shipping-price.log', true);
+        //Mage::log(print_r($getVar, true), null, 'shipping-price.log', true);
         $getTitleVar = "getTitle" . $getVar;
         $getPriceVar = "getPrice" . $getVar;
         $title = Mage::getSingleton('core/session')->$getTitleVar();
@@ -231,7 +230,7 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
         }
         $price = Mage::getSingleton('core/session')->$getPriceVar();
         //Mage::log(print_r($price, true), null, 'shipping-price.log', true);
-        if (!empty($price)) {
+        if (!empty($price) && $price != -1) {
             $rate->setPrice($price);
         } else {
             $rate->setPrice(-1);
@@ -239,7 +238,6 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
         $rate->setCost(0);
         return $rate;
     }
-
     /**
      * 
      * @param type $xmlObject

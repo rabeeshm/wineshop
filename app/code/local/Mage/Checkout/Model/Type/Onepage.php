@@ -586,13 +586,17 @@ class Mage_Checkout_Model_Type_Onepage
             return array('error' => -1, 'message' => Mage::helper('checkout')->__('Invalid shipping method.'));
         }
          $price = $rate->getPrice();
+         Mage::log("from onpage", null, 'shipping-price.log', true);
+         Mage::log(print_r($price, true), null, 'shipping-price.log', true);
           if ($price < 0) {
               return array('error' => -1, 'message' => Mage::helper('checkout')->__('Invalid shipping method.'));
           }
         
         $this->getQuote()->getShippingAddress()
             ->setShippingMethod($shippingMethod);
-
+        Mage::log("from onpage", null, 'shipping-price.log', true);
+        Mage::log(print_r($price, true), null, 'shipping-price.log', true);
+         
         $this->getCheckout()
             ->setStepData('shipping_method', 'complete', true)
             ->setStepData('payment', 'allow', true);
