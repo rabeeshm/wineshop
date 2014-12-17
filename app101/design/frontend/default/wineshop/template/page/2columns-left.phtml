@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+    <head>
+        <?php echo $this->getChildHtml('head') ?>
+        <script>
+            $j(document).ready(function() {
+                $j(".rslides").responsiveSlides({
+                    auto: true,
+                    speed: 500,
+                    pager: true
+                });
+            });
+        </script>
+    </head>                  
+    <body>     
+        <?php echo $this->getChildHtml('after_body_start') ?>
+
+        <div id="header" class="container">
+
+            <?php echo $this->getChildHtml('header') ?>
+            <div class="clear"></div>
+        </div>   
+
+        <div id="main_content" class="container">
+            <div class="grid_5">
+
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+
+            </div>
+            <?php
+            $routeName = Mage::app()->getRequest()->getRouteName();
+            $identifier = Mage::getSingleton('cms/page')->getIdentifier();
+            if ($routeName == 'cms' && ($identifier == 'home' || $identifier == '')) {
+                ?>     
+                <div class="slider_container grid_5">
+
+
+
+
+                    <ul class="rslides">
+
+                        <!-- Image Slider Starts Here  -->
+                        <?php echo $this->getLayout()->createBlock('easybanner/banner', 'banner', array('banner_id' => '1'))->setTemplate('easybanner/simpleslider.phtml')->toHtml(); ?>
+
+                        <!-- Image Slider ends Here  -->
+                                                                <!-- <li><img src="<?php echo $this->getSkinUrl('images/main_banner_bg.jpg'); ?>" alt="" /> </li>
+                                                                <li><img src="<?php echo $this->getSkinUrl('images/main_banner_bg2.jpg'); ?>" alt="" /> </li>--> 
+                    </ul>
+
+                </div>
+
+                <?php
+            }
+            ?>
+
+
+
+            <div class="left_side_bar grid_1">
+
+                <?php echo $this->getChildHtml('left') ?>
+
+
+            </div> 
+            <div class="wide_right_content grid_4">
+
+
+
+                <?php echo $this->getChildHtml('content') ?>     
+
+
+            </div><div class="clear"></div>
+        </div>
+
+        <?php echo $this->getChildHtml('footer') ?>
+                <?php echo $this->getChildHtml('before_body_end') ?>
+    </body>                 
+</html>

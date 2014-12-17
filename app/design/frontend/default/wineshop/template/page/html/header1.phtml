@@ -1,0 +1,76 @@
+
+			<div class="grid_1">
+		<a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>">	<img src="<?php echo $this->getSkinUrl('images/logo.gif');?>" alt="" class="logo" /></a>
+			</div>
+			<div class="grid_3 right">
+				<div class="account_details">
+					<a href="<?php echo $this->getUrl('') ?>" class="user_account_icon"></a>
+					<div class="user_account">
+                                                            <?php $session = Mage::getSingleton('customer/session');
+								if($session->isLoggedIn()) :
+								   $customer = $session->getCustomer();
+								   $customer->getFirstname();
+                                                             ?>
+		<a href="<?php echo $this->getUrl('')?>customer/account/">HI,<?php echo $customer->getFirstname();?></a>
+							 <?php else:?>
+         	<a href="<?php echo $this->getUrl('') ?>">Hi User</a>
+                                                   <?php endif ?>			
+						<div class="user_account_drop_down">
+							<img src="<?php echo $this->getSkinUrl('images/nav_second_level.png');?>" alt=""/>
+							<div class="user_account_links">
+								<?php echo $this->getChildHtml('topLinks') ?>
+							</div>
+						</div>
+					</div>
+					<span class="user_account_sub"><?php echo $this->getChildHtml('userlogin') ?></span>
+				</div>
+				<div class="shopping_details">
+
+<a href="<?php echo $this->getUrl('')?>checkout/cart/">
+                                        <span class="user_account">
+                                            Drk
+                                              <?php $tot= Mage::getSingleton('checkout/session')->getQuote()->getGrandTotal(); 
+                                                     echo round($tot,2);
+                                              ?>
+					
+					</span>
+					<span class="user_account_sub">
+    <?php
+      $count = $this->helper('checkout/cart')->getSummaryCount();  //get total items in cart
+      $total = $this->helper('checkout/cart')->getQuote()->getGrandTotal(); //get total price
+      if($count==0)
+      {
+        echo $this->__('0 Items',$count);
+      }
+      if($count==1)
+      {
+        echo $this->__('1 Item',$count);
+      }
+      if($count>1)
+      {
+        echo $this->__("%s Items",$count);
+      }
+      echo $this->__('', $this->helper('core')->formatPrice($total, false));
+    ?>
+                                        </span>
+</a>
+				</div>
+			</div>
+			<div class="grid_4">
+				<div class="main_menu_section  right">
+					<ul>
+						<li><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"><img src="<?php echo $this->getSkinUrl('images/home_icon.png');?>" alt=""/></a></li>
+			
+                                                <?php echo $this->getChildHtml('topMenu') ?>
+					</ul>
+                                    
+					<div class="search_division">
+						
+                                            <?php echo $this->getChildHtml('topSearch') ?>
+                                            
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		
+		

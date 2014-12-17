@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<widgets>
+    <regions_regionmap type="regions/regionmap" translate="name description"  module="regions">
+        <name>Region Maps</name>
+        <description type="desc">Adds Category Map </description>
+    </regions_regionmap>
+    <!-- <regions_digg type="regions/digg" translate="name description" module="regions">
+        <name>Bookmark: Digg</name>
+        <description type="desc">Adds a simple "You Digg?" link</description>
+    </regions_digg>
+    <regions_delicious type="regions/delicious" translate="name description" module="regions">
+        <name>Bookmark: Delicious</name>
+        <description type="desc">Adds a simple delicious.com bookmarking link</description>
+    </regions_delicious> -->
+</widgets>

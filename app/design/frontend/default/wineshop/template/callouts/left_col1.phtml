@@ -1,0 +1,48 @@
+<!--	
+   Sidebar categories,sub-categories and sub-sub-categories of a parent category starts here   
+      <h5 class="category_head"> Category </h5>
+	
+	<?php $_helper = Mage::helper('catalog/category')?>
+        <?php $_categories = $_helper->getStoreCategories(); ?>
+
+	    <?php $currentCategory = Mage::registry('current_category') ?>
+	    <?php if (count($_categories) > 0): ?>
+            <ul id="nav" class="category_menu">
+            <?php foreach($_categories as $_category): ?>
+              <li>
+               <a href="<?php echo $_helper->getCategoryUrl($_category) ?>" class="MenuBarItemSubmenu"><?php echo $_category->getName() ?></a>
+                    <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
+                    <?php $_subcategories = $_category->getChildrenCategories() ?>
+                    <?php if (count($_subcategories) > 0): ?>
+                        <ul>
+                         <?php foreach($_subcategories as $_subcategory): ?>
+                            <li>
+                                <a href="<?php echo $_helper->getCategoryUrl($_subcategory);?>" class="MenuBarItemSubmenu">
+                                <?php echo $_subcategory->getName() ?></a>
+                                sub sub category
+                                <?php $_subcategory = Mage::getModel('catalog/category')->load($_subcategory->getId()) ?>
+                                <?php $_subsubcategories = $_subcategory->getChildrenCategories() ?>
+                                <?php if (count($_subsubcategories) > 0): ?>
+                                 <ul>
+                                 <?php foreach($_subsubcategories as $_subsubcategory): ?>
+                                 <li>
+                                    <a href="<?php echo $_helper->getCategoryUrl($_subsubcategory) ?>">
+                                 <?php echo $_subsubcategory->getName() ?>
+                                    </a>
+                                 </li>
+                          <?php endforeach; ?>
+                        </ul>
+                     <?php endif; ?>
+                                 sub sub category
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
+                    </li>
+             <?php endforeach; ?>
+            </ul>
+    <?php endif; ?>
+
+
+  Sidebar categories,sub-categories and sub-sub-categories of a parent category ends here-->

@@ -1,0 +1,89 @@
+      
+
+
+
+ <?php
+
+    $_item = $this->getItem();
+    $isVisibleProduct = $_item->getProduct()->isVisibleInSiteVisibility();
+    $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(),           Mage_Catalog_Model_Product_Attribute_Source_Msrp_Type::TYPE_BEFORE_ORDER_CONFIRM);
+    ?>
+
+               <div class="mycart_product">
+                   
+			<span class="cart_product_image">
+				<a href="<?php echo $this->getProductUrl()?>" title="<?php echo $this->escapeHtml($this->getProductName()) ?>" class="product-image"><img src="<?php echo $this->getProductThumbnail()->resize(50, 50)->setWatermarkSize('30x10'); ?>" width="50" height="50" alt="<?php echo $this->escapeHtml($this->getProductName()) ?>" /></a>
+			</span>
+			<span class="cart_product_details">
+                           <?php $custom = Mage::getModel('catalog/product')->load($_item->getProductId());
+				    $str= $custom->getShortDescription(); 
+				    echo substr($str,0,20);?>..
+						
+
+		<span class="price_details">
+				<span><?php echo $this->getQty() ?>x</span>
+				      <?php 
+					$product= Mage::getModel('catalog/product')->load($_item->getProductId()); 
+					$price = $product->getPrice();
+					$webprice = $product->getwebprice();
+					$specialprice = $product->getFinalPrice();
+			              ?>
+				      Dkr <?php echo number_format($price,2);?>
+            
+       
+<!----Code to display the price including and excluding tax  -->
+
+                                                         
+       <?php /*  if ($this->helper('tax')->displayCartPriceExclTax() || $this->helper('tax')->displayCartBothPrices()): ?>
+        <?php if ($this->helper('tax')->displayCartBothPrices()): ?>
+            <?php echo $this->__('Excl. Tax'); ?>:
+        <?php endif; ?>
+        <?php if (Mage::helper('weee')->typeOfDisplay($_item, array(0, 1, 4), 'sales')): ?>
+            <?php echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice()+$_item->getWeeeTaxAppliedAmount()+$_item->getWeeeTaxDisposition()); ?>
+        <?php else: ?>
+            <?php echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice()) ?>
+        <?php endif; ?>
+        <?php if (Mage::helper('weee')->getApplied($_item)): ?>
+       
+            <?php if (Mage::helper('weee')->typeOfDisplay($_item, 1, 'sales')): ?>
+                
+                <?php foreach (Mage::helper('weee')->getApplied($_item) as $tax): ?>
+                   <?php echo $tax['title']; ?>: <?php echo Mage::helper('checkout')->formatPrice($tax['amount'],true,true); ?><br />
+                <?php endforeach; ?>
+               
+            <?php elseif (Mage::helper('weee')->typeOfDisplay($_item, 2, 'sales')): ?>
+                <?php foreach (Mage::helper('weee')->getApplied($_item) as $tax): ?>
+                  <?php echo $tax['title']; ?>: <?php echo Mage::helper('checkout')->formatPrice($tax['amount_incl_tax'],true,true); ?><br />
+                <?php endforeach; ?>
+            <?php elseif (Mage::helper('weee')->typeOfDisplay($_item, 4, 'sales')): ?>
+               
+                <?php foreach (Mage::helper('weee')->getApplied($_item) as $tax): ?>
+                   <?php echo $tax['title']; ?>: <?php echo Mage::helper('checkout')->formatPrice($tax['amount_incl_tax'],true,true); ?><br />
+                <?php endforeach; ?>
+               
+            <?php endif; ?>
+            <?php if (Mage::helper('weee')->typeOfDisplay($_item, 2, 'sales')): ?>
+                <?php echo Mage::helper('weee')->__('Total'); ?>:<br /> <?php echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice()+$_item->getWeeeTaxAppliedAmount()+$_item->getWeeeTaxDisposition()); ?>
+            <?php endif; ?>
+        <?php endif; ?>
+    <?php endif; */?> 
+
+            
+   <!----Code to display the price including and excluding tax  -->                      
+
+
+
+                                       
+		</span>
+		  <span class="mycart_options">
+        <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo $this->__('Delete') ?>" onclick="return confirm('<?php echo $this->__('Are you sure you would like to remove this item from the shopping cart?') ?>');"><?php echo $this->__('Delete') ?></a>
+        <?php if ($isVisibleProduct): ?>  l
+        <a href="<?php echo $this->getConfigureUrl() ?>" title="<?php echo $this->__('Edit') ?>"><?php echo $this->__('Edit')?></a>
+        <?php endif ?>
+							
+		  </span>
+	 </span>
+						
+	     </div>
+			
+

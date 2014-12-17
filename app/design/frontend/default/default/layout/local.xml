@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+<default>
+    <reference name="right">
+        <action method="unsetChild"><name>catalog.compare.sidebar</name></action>
+    </reference>
+    <reference name="left">
+        <action method="unsetChild"><name>catalog.compare.sidebar</name></action>
+<action method="unsetChild"><name>catalog.leftnav</name></action>
+    </reference>
+</default>
+
+<customer_account>
+    <reference name="left">
+        <action method="unsetChild"><name>catalog.compare.sidebar</name></action>
+    </reference>
+    <reference name="right">
+        <action method="unsetChild"><name>catalog.compare.sidebar</name></action>
+    </reference>
+</customer_account>
+</layout>

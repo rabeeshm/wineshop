@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <!-- Mage_Reports -->
+        <reference name="right">
+            <block type="reports/product_viewed" before="left.permanent.callout" name="right.reports.product.viewed" template="reports/product_viewed.phtml" />
+            <block type="reports/product_compared" before="left.permanent.callout" name="right.reports.product.compared" template="reports/product_compared.phtml" />
+        </reference>
+    </default>
+</layout>

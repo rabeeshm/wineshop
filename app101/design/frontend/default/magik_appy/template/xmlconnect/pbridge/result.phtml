@@ -1,0 +1,15 @@
+<script type="text/javascript">
+//<![CDATA[
+
+    function setPaymentMethod()
+    {
+        /**
+         * We can not access the document-object of the parent window
+         * because of security restrictions of the mobile device's browser.
+         * Therefore we perform redirect with given params that we will use for checkout.
+         */
+        window.parent.location.href = '<?php echo $this->getPbridgeParamsAsUrl(); ?>';
+    }
+    window.onload = setPaymentMethod();
+//]]>
+</script>

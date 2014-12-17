@@ -1,0 +1,55 @@
+<h4 class="new_arrival_head"><?php echo $this->__('New Arrivals'); ?></h4>
+<div class="new_arrival_section">
+    <?php if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
+        <?php
+        $_columnCount = $this->getColumnCount();
+        $_productCollection = $this->getLoadedProductCollection();
+        $_helper = $this->helper('catalog/output');
+        ?>
+        <?php
+        $i = 1;
+        foreach ($_products->getItems() as $_product):
+            if ($i <= 10):
+                ?>
+                <div class="mycart_product">
+                    <span class="cart_product_image">
+                        <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_product->getName()) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(50) ?>" width="135" height="80" alt="<?php echo $this->escapeHtml($_product->getName()) ?>" /></a>
+                    </span>
+                    <span class="cart_product_details">
+                        <?php
+                        $str = $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description');
+                        echo substr($str, 0, 20);
+                        ?>...
+                        <span class="price_details">			
+                            <?php
+                            $product = Mage::getModel('catalog/product')->load($_product->getId());
+                            $price = $product->getPrice();
+                            $webprice = $product->getwebprice();
+                            $specialprice = $product->getFinalPrice();
+                            
+                            $_finalPriceInclTax = Mage::helper('tax')->getPrice($_product, $_product->getFinalPrice(), true);
+                            $fxdTax = $product->getFixedTax();
+                            $fxdTaxrate = $fxdTax[0]['value'];
+                            $taxrate = $_product->getData('tax_percent');
+                            $fixedtax_amount = $fxdTaxrate * $taxrate;
+                            $_finalPriceInclTax = $_finalPriceInclTax + $fixedtax_amount + $fxdTaxrate;
+                            ?>
+                            Dkr <?php echo number_format($_finalPriceInclTax, 2); ?>
+                        </span>
+                    </span>
+                </div>
+                <?php $i++;
+            endif;
+            ?>
+        <?php endforeach; ?>	
+<?php endif; ?>
+</div>
+
+
+
+
+
+
+
+
+

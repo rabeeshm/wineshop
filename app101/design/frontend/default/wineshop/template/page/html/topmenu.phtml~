@@ -1,0 +1,4 @@
+<li><a href="<?php echo $this->getUrl('') ?>products">Products</a></li>
+<li><a href="<?php echo $this->getUrl('') ?>about-magento-demo-store">About Us</a></li>
+<li><a href="<?php echo $this->getUrl('') ?>customer-service">Our Services</a></li>
+<li><a href="<?php echo $this->getUrl('') ?>contact-us">Contact Us</a></li>

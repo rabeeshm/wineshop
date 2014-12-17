@@ -1,0 +1,158 @@
+<?php 
+$getMax = "get_MaxPrice";
+$getMin = "get_MinPrice";
+$Max = Mage::getSingleton('core/session')->$getMax();
+$Min = Mage::getSingleton('core/session')->$getMin(); ?>
+<?php if($_GET['min']){
+    $minVal = $_GET['min'];
+} else {
+    $minVal = $Min;
+} ?>
+
+<?php if($_GET['max']){
+    $maxVal = $_GET['max'];
+} else {
+    $maxVal = $Max;
+} ?>
+<?php if ($this->canShowBlock()): ?>
+    <?php /*
+      <div class="block block-layered-nav">
+      <div class="block-title">
+      <strong><span><?php echo $this->__('Shop By') ?></span></strong>
+      </div>
+
+      ?>
+      <div class="block-content">
+      <?php echo $this->getStateHtml() ?>
+      <?php if ($this->getLayer()->getState()->getFilters()): ?>
+      <div class="actions"><a href="<?php echo $this->getClearUrl() ?>"><?php echo $this->__('Clear All') ?></a></div>
+      <?php endif; */ ?>
+
+    <h5 class="price_range_head">Vælg pris område</h5>
+
+    <?php if ($this->canShowOptions() || 1 == 1): ?>
+        <?php /*  <p class="block-subtitle"><?php echo $this->__('Shopping Options') ?></p>
+          <dl id="narrow-by-list"> <?php */ ?>
+        <?php $_filters = $this->getFilters() ?>
+        <?php foreach ($_filters as $_filter): ?>
+            <?php if ($_filter->getItemsCount()): ?>
+                <?php /* echo $this->__($_filter->getName()) */ ?>
+                <?php echo $_filter->getHtml() ?>
+            <?php endif; ?>
+        <?php endforeach; ?>
+
+        <?php /* </dl> */ ?>
+        <script type="text/javascript">decorateDataList('narrow-by-list')</script>
+    <?php endif; ?>
+
+    <?php /*
+      </div>
+      </div>
+     */ ?>
+
+<?php else: ?>
+    <div class="price">
+        <p>
+            <input type="text" id="amount" readonly="readonly" style="background:none; border:none;" value="Dkr <?php echo $minVal; ?> - Dkr <?php echo $maxVal; ?>" />
+        </p>
+        <div id="slider-range"></div>
+    </div>
+    <script type="text/javascript">
+        jQuery(function($) {
+            var newMinPrice, newMaxPrice, url, temp;
+            var categoryMinPrice = <?php echo $Min; ?>;
+            var categoryMaxPrice = <?php echo $Max; ?>;
+            function isNumber(n) {
+                return !isNaN(parseFloat(n)) && isFinite(n);
+            }
+
+            $(".priceTextBox").focus(function() {
+                temp = $(this).val();
+            });
+
+            $(".priceTextBox").keyup(function() {
+                var value = $(this).val();
+                if (!isNumber(value)) {
+                    $(this).val(temp);
+                }
+            });
+
+            $(".priceTextBox").keypress(function(e) {
+                if (e.keyCode == 13) {
+                    var value = $(this).val();
+                    if (value < categoryMinPrice || value > categoryMaxPrice) {
+                        $(this).val(temp);
+                    }
+                    url = getUrl($("#minPrice").val(), $("#maxPrice").val());
+                    window.location = url;
+                }
+            });
+
+            $(".priceTextBox").blur(function() {
+                var value = $(this).val();
+                if (value < categoryMinPrice || value > categoryMaxPrice) {
+                    $(this).val(temp);
+                }
+
+            });
+
+            $(".go").click(function() {
+                url = getUrl($("#minPrice").val(), $("#maxPrice").val());
+                window.location = url;
+            });
+            $("#slider-range").slider({
+                range: true,
+                min: categoryMinPrice,
+                max: categoryMaxPrice,
+                values: [<?php echo $minVal; ?>, <?php echo $maxVal; ?>],
+                slide: function(event, ui) {
+                    newMinPrice = ui.values[0] + ".00";
+                    newMaxPrice = ui.values[1] + ".00";
+
+                    $("#amount").val("Dkr" + newMinPrice + " - Dkr" + newMaxPrice);
+
+
+
+                }, stop: function(event, ui) {
+
+                    // Current Min and Max Price
+                    var newMinPrice = ui.values[0] + ".00";
+                    var newMaxPrice = ui.values[1] + ".00";
+                    // Update Text Price
+                    $("#amount").val("Dkr" + newMinPrice + " - Dkr" + newMaxPrice);
+
+
+
+                    url = getUrl(newMinPrice, newMaxPrice);
+                    if (newMinPrice != <?php echo $minVal; ?> && newMaxPrice !=  <?php echo $maxVal ?>) {
+                        if (typeof timer != "undefined") {
+                            clearTimeout(timer);
+                        }
+                        timer = setTimeout(function() {
+                            window.location = url;
+                        }, 600);
+                        //clearTimeout(timer);
+                        //window.location= url;
+
+                    } else {
+                        timer = setTimeout(function() {
+                            window.location = url;
+                        }, 600);
+                    }
+                }
+            });
+
+            function getUrl(newMinPrice, newMaxPrice) {
+                var url = window.location.href;
+                //Replace the min & max values in the URL with the arguments
+                url = url.replace(/min=\d*\.\d*/, 'min=' + newMinPrice);
+                url = url.replace(/max=\d*\.\d*/, 'max=' + newMaxPrice);
+                return url;
+            }
+        });
+    </script>
+
+    <style type="text/css">.ui-slider .ui-slider-handle{width:17px; height:18px; border:none;}.ui-slider{ width:autopx; height:7px; border:none;}.ui-slider .ui-slider-range{border:none;}#amount{}</style>
+
+    <script type="text/javascript">decorateDataList('narrow-by-list')</script>
+<?php endif; ?>

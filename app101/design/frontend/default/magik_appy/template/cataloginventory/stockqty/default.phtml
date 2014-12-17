@@ -1,0 +1,6 @@
+
+<?php if ($this->isMsgVisible()) : ?>
+    <span class="stock-qty">
+        <?php echo $this->__('Only %s left', $this->getStockQty()) ?>
+    </span>
+<?php endif ?>

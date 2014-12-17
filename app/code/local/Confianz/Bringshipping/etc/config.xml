@@ -1,0 +1,48 @@
+<!--?xml version="1.0"?-->
+<config>
+    <modules>
+        <Confianz_Bringshipping>
+            <version>0.1.0</version>
+        </Confianz_Bringshipping>
+    </modules>
+    <global>
+        <models>
+            <bringshipping>
+                <class>Confianz_Bringshipping_Model</class>
+            </bringshipping>
+        </models>
+        <resources>
+            <bringshipping_setup>
+                <setup>
+                    <module>Confianz_Bringshipping</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </bringshipping_setup>
+        </resources>
+        <helpers>
+            <bringshipping>
+                <class>Confianz_Bringshipping_Helper</class>
+            </bringshipping>
+        </helpers>
+    </global>
+    <default>
+        <carriers>
+            <bringshipping>
+                <active>1</active>
+                <allowed_methods>delivery</allowed_methods>
+                <methods>delivery</methods>
+                <sallowspecific>0</sallowspecific>
+                <model>Confianz_Bringshipping_Model_Carrier_LocalDelivery</model>
+                <name>Bring Shipping</name>
+                <title>Shipping</title>
+                <specificerrmsg>This shipping method is currently unavailable. If
+                    you would like to ship using this shipping method, please contact
+                    us.
+                </specificerrmsg>
+                
+            </bringshipping>
+        </carriers>
+    </default>
+</config>

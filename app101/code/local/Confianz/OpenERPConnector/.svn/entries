@@ -1,0 +1,40 @@
+10
+
+dir
+65
+svn://svn/wineshop/app/code/local/Confianz/OpenERPConnector
+svn://svn/wineshop
+
+
+
+2014-01-08T06:46:00.030696Z
+3
+rabeesh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5c749015-5054-4e21-93e3-53d790702cca
+
+controllers
+dir
+
+etc
+dir
+
+Helper
+dir
+
+Model
+dir
+

@@ -1,0 +1,24 @@
+
+
+<?php $randnum = rand(1000,99999);?>
+
+<?php $_banner = $this->getBanner(); 
+if ($_banner && $_banner->getStatus()==1):?>
+
+
+  
+	<?php $_banner_items = $this->getBannerItems(); ?>
+	<?php foreach ($_banner_items as $_banner_item): ?>
+	<a href="<?php echo $_banner_item->getLinkUrl(); ?>"> 
+	<?php if ($_banner_item->getImage()): ?>
+			<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$_banner_item->getImage()?>" width="<?php echo $_banner->getWidth().'px'?> " height=" <?php echo $_banner->getHeight().'px'?>" alt="<?php echo $_banner_item->getContent()?>"/>
+		<?php elseif ($_banner_item->getImageUrl()): ?>
+			<img src="<?php echo $_banner_item->getImageUrl() ?>" width="<?php echo $_banner->getWidth().'px'?> " height=" <?php echo $_banner->getHeight().'px'?>" alt="<?php echo $_banner_item->getContent()?>" />
+		<?php endif; ?>
+        </a>    
+        <?php endforeach ?>
+
+
+<?php endif;?>
+
+

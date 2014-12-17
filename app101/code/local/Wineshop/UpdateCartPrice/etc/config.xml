@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Wineshop_UpdateCartPrice>
+            <version>0.0.1</version>
+        </Wineshop_UpdateCartPrice>
+    </modules>
+
+    <!-- Configure our module's behavior in the global scope -->
+    <global>
+
+        <!-- Defining models -->
+        <models>
+
+            <!--
+                Unique identifier in the model's node.
+                By convention, we put the module's name in lowercase.
+            -->
+            <wineshop_updatecartprice>
+
+                <!--
+                    The path to our models directory, with directory
+                    separators replaced by underscores
+                -->
+                <class>Wineshop_UpdateCartPrice_Model</class>
+
+            </wineshop_updatecartprice>
+
+        </models>
+
+        <events>
+            <checkout_cart_save_after>
+                <observers>
+                    <wineshop_updatecartprice>
+                        <class>wineshop_updatecartprice/observer</class>
+                        <method>addComboPrice</method>
+                        <type>singleton</type>
+                    </wineshop_updatecartprice >
+                </observers>
+            </checkout_cart_save_after>
+        </events>
+
+    </global>
+
+</config>

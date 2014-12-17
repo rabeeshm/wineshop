@@ -1,0 +1,49 @@
+10
+
+dir
+66
+svn://svn/wineshop/app/design/frontend/default/wineshop/template/catalog
+svn://svn/wineshop
+
+
+
+2014-03-03T09:32:03.099234Z
+66
+rabeesh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5c749015-5054-4e21-93e3-53d790702cca
+
+navigation
+dir
+
+product
+dir
+
+msrp
+dir
+
+seo
+dir
+
+rss
+dir
+
+layer
+dir
+
+category
+dir
+

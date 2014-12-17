@@ -1,0 +1,26 @@
+
+<?php /* <div class="footer-container">
+    <div class="footer">
+        <?php echo $this->getChildHtml() ?>
+        <p class="bugs"><?php echo $this->__('Help Us to Keep Magento Healthy') ?> - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong><?php echo $this->__('Report All Bugs') ?></strong></a> <?php echo $this->__('(ver. %s)', Mage::getVersion()) ?></p>
+        <address><?php echo $this->getCopyright() ?></address>
+    </div>
+</div>
+*/?>
+
+<div id="footer" class="container">
+<?php echo $this->getChildHtml() ?>
+			<!--<ul>
+				<li><a href="">Om Os</a></li>
+				<li><a href="">Kundeservic</a></li>
+				<li><a href="">OSS</a></li>
+				<li><a href="">Search Terms</a></li>
+				<li><a href="">Advanced Search</a></li>
+				<li><a href="">Orders and Returns</a></li>
+				<li><a href="">Contact Us</a></li>
+			</ul>-->
+			<span class="copyright">Copyright 2013 \B7 All rights reserved </span>
+		</div>
+
+
+

@@ -1,0 +1,178 @@
+<!-- CHECK IF THERE ARE ANY FEATURED PRODUCTS -->
+<?php 
+// get the settings set from admin
+/*
+ $move = Mage::getModel('featured/featured')->load(1);
+ if ($featured_products = Mage::getModel('featuredproducts/featuredproducts')->getFeaturedProducts()):
+*/
+
+$move = Mage::getModel('featuredproducts/featuredproducts')->load(Mage::app()->getWebsite()->getId());
+?>
+<div class="product_list">
+<div id="product_list">
+<div class="left_arrow"><a style="cursor: pointer;" onclick="my_glider1.previous();return false"><img height="27" width="19" src="<?php echo $this->getSkinUrl('images/arrow_left.png');?>" alt="" /></a></div>
+<div class="right_arrow"><a style="cursor: pointer;" onclick="my_glider1.next();return false"><img height="27" width="19" src="<?php echo $this->getSkinUrl('images/arrow.png');?>" alt="" /></a></div>
+<?
+if ($featured_products = Mage::getModel('featuredproducts/featuredproducts')->getFeaturedProducts(Mage::app()->getWebsite()->getId())): ?>
+<?php 
+if($move->getType() == '1')
+{
+
+		if($move->getMove() == 2){
+		  $scrollerClass='vertical-scroller';		
+  		  $sectionClass='vertical-section';
+		  $contentClass='';
+		  $gliderParam='vertical-';
+		  }
+		else {
+		  $scrollerClass='scroller1';		
+  		  $sectionClass='section1';
+		  $contentClass='content';
+		  $gliderParam='Horizontal';
+		  }
+
+	/*
+	* PRODUCT VIEW
+	*/
+?>
+	<div id="my-glider1">
+		<div class="<?php echo $scrollerClass; ?>">
+ 		  <div id="mainDiv" class='<?php echo $contentClass; ?>' onmouseover="my_glider1.stop();">
+	  			<?php 
+	  			// total number of featured products.
+	  			$countFeatured = count($featured_products);
+	  			// get the number of featured products to show.
+	  			$_collectionSize = $move->getNo_of_featured();
+				if($countFeatured < $_collectionSize)
+	  			{
+	  				echo "The No. of featured produts are less then the No. of products to display";
+	  			}
+	  			else 
+	  			{
+	  			$j=1;
+	  			$k=0;
+	  			$fourArr=array();	
+	  			for($i=0;$i<$_collectionSize;$i++)
+				{
+					$_product = Mage::getModel('catalog/product')->load($featured_products[$i]['product_id']); 
+				
+					if($k==4)
+					{
+					 $k=0;
+					}
+					 
+					if($k==0){ ?>	<div class="<?php echo $sectionClass; ?>" id="section<?php echo $j; ?>"> <? } ?>
+					<div class="feature-entry" id="post-<?php echo $_product->getId(); ?>" style="float:left;">												
+						<li style="width:176px;"><a href="<?php echo $_product->getProductUrl() ?>"><img class="product-image" src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(131,128); ?>" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" /></a>
+						<div><a href="<?php echo $_product->getProductUrl() ?>"><strong><?php echo $this->htmlEscape($_product->getName()); ?></strong></a></div>
+						</li>
+					</div>
+					<? if($k==3 || $i==$_collectionSize-1){ $j++;?> </div> <? } ?> 
+			              <?php 				      
+			              $k++;
+					}
+				}
+			        ?>
+			        
+			</div>
+		</div>
+	</div>	
+<?php
+}
+endif;
+if($move->getType() == 2)
+{
+
+		if($move->getMove() == 2){
+		  $scrollerClass='vertical-scroller';		
+  		  $sectionClass='vertical-section';
+		  $contentClass='';
+		  $gliderParam='vertical-';
+		  }
+		else {
+		  $scrollerClass='scroller1';		
+  		  $sectionClass='section1';
+		  $contentClass='content';
+		  $gliderParam='Horizontal';
+		  }
+
+
+	/*
+	* IMAGE VIEW
+	*/
+	$imageSize = $move->getImagesize();
+	$width = strtok($imageSize,'x');
+	$height = strtok('x');
+?>
+	<div id="my-glider1">
+		<div id="scrollerid" class="<?php echo $scrollerClass; ?>">
+			<div id="mainDiv" class="<?php echo $contentClass; ?>" onmouseover="my_glider1.stop();">
+	  			<?php 
+	  			// total number of featured products.
+	  			//$countFeatured = count($featured_products);
+	  			// get the number of featured products to show.
+	  			$_collectionSize = $move->getNo_of_images();
+				if($_collectionSize < 0)
+	  			{
+	  				echo "The No. of featured image are less then the No. of image to display";
+	  			}
+	  			else 
+	  			{
+	  			$j=1;
+	  			$k=0;
+	  			$fourArr=array();	
+				$imageDetail = Mage::getModel('featuredproducts/featuredproducts')->loadImages(Mage::app()->getWebsite()->getId());
+				$baseUrl=Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);
+	  			for($i=0;$i<$_collectionSize;$i++)
+				{
+					//$_product = Mage::getModel('catalog/product')->load($featured_products[$i]['product_id']); 
+				
+					if($k==5)
+					{
+					 $k=0;
+					}
+					 
+					if($k==0){ ?>	<div class="<?php echo $sectionClass; ?>" id="section<?php echo $j; ?>"> <? } ?>
+					<div class="feature-entry" id="post-<?php echo $imageDetail[$i]['id']; ?>" style="float:left;">												
+						<li><a href="<?php echo $imageDetail[$i]['image_link']; ?>"><img class="product-image" src="<?php echo $baseUrl.$imageDetail[$i]['image_path']; ?>" alt="" /></a>						
+						</li>
+					</div>
+                      
+					<? if($k==4 || $i==$_collectionSize-1){ ?> </div>
+
+						<script type="text/javascript">
+						//document.getElementById("section<?php echo $j; ?>").style.width='<?php echo $width; ?>px';
+						document.getElementById("section<?php echo $j; ?>").style.padding='0px';
+						//document.getElementById("section<?php echo $j; ?>").style.height='<?php //echo $height; ?>px';
+						</script> 
+ <? $j++;} ?> 
+			              <?php 				      
+			              $k++;
+					}
+					
+				}
+			        ?>
+			</div>
+		</div>
+	</div>
+	<!--div id="controlsid" class="controls" onmouseover="my_glider1.stop();">
+	<ul id="controlsulid" class="clearfix" style="margin-top:-1px;margin-left:1px;">
+	<li id="controlsliid" style="padding-left: 5px;text-align:left;" onclick="my_glider1.previous();return false">Previous</a></li> 
+	<li style="padding-right: 5px;" onclick="my_glider1.next();return false">Next</li>
+	</ul>
+	</div-->
+	<script type="text/javascript">
+	//document.getElementById("scrollerid").style.width='<?php echo $width; ?>px';
+	//document.getElementById("scrollerid").style.height='<?php echo $height; ?>px';
+	/*document.getElementById("controlsid").style.width='<?php echo $width; ?>px';
+	document.getElementById("controlsulid").style.width='<?php echo $width+2; ?>px';
+	document.getElementById("controlsliid").style.width='<?php echo $width-35; ?>px';*/
+	</script>
+<?php
+}
+?>
+<script type="text/javascript" charset="utf-8">
+var my_glider1 = new Glider('my-glider1','<?php echo $gliderParam; ?>', {duration:0.5,autoGlide:true, frequency:8});
+</script>
+</div>
+</div>

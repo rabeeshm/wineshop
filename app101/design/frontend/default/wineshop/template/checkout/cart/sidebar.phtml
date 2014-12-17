@@ -1,0 +1,78 @@
+
+
+
+<h5 class="mycart_head">Indkøbs kurv</h5>
+<div class="mycart_details">
+    
+<?php if ( $this->getIsNeedToDisplaySideBar()):?>
+    <?php  $_cartQty = $this->getSummaryCount();
+    if($_cartQty<>0)
+    {
+    
+    ?>
+
+				
+					<img src="<?php echo $this->getSkinUrl('images/my_cart_icon.png');?>" alt="" />
+					<span class="mycart_price_details">Dkr  
+			 <?php $tot= Mage::getSingleton('checkout/session')->getQuote()->getGrandTotal(); 
+                                                     echo round($tot,2);
+                                              ?>
+						<span class="item_nos">
+                                                   
+                                                     <?php
+      $count = $this->helper('checkout/cart')->getSummaryCount();  //get total items in cart
+      $total = $this->helper('checkout/cart')->getQuote()->getGrandTotal(); //get total price
+      if($count==0)
+      {
+        echo $this->__('<a class="cartgo">0 Items</a>',$count);
+      }
+      if($count==1)
+      {?>
+
+<a href="<?php echo $this->getUrl('') ?>checkout/cart" class="cartgo">1 Item</a>
+     <?php }
+      if($count>1)
+      {?>
+<a href="<?php echo $this->getUrl('') ?>checkout/cart" class="cartgo"><?php echo $count;?> <?php echo $this->__('Item'); ?></a>
+<?php
+      }
+      echo $this->__('', $this->helper('core')->formatPrice($total, false));
+    ?>
+                
+                                                    
+                                                </span>
+					</span>
+                                        
+                                        <?php
+    }
+    ?>
+				</div>
+			 <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
+				<div class="mycart_details">
+                                    <?php echo $this->getChildHtml('extra_actions') ?>
+                                    <input class="checkout_btn" value="<?php echo $this->__('Add to Cart'); ?>" type="submit" value="" onclick="setLocation('<?php echo $this->getCheckoutUrl() ?>')"/>
+				</div>
+  <?php endif ?>
+
+
+
+				<div class="mycart_product_section">
+                                      <?php $_items = $this->getRecentItems() ?>
+                             <?php if(count($_items)): ?>        
+                                    
+                                     <?php foreach($_items as $_item): ?>
+            <?php echo $this->getItemHtml($_item) ?>
+        <?php endforeach; ?>
+                                    
+				 <?php else: ?>
+      <?php echo $this->__('You have no items in your shopping cart.') ?>
+    <?php endif ?>
+					
+				
+				</div>
+
+
+
+    
+    
+    <?php endif;?>

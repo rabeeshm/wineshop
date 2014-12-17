@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Wineshop_KeyIngredient>
+            <version>0.0.1</version>
+        </Wineshop_KeyIngredient>
+    </modules>
+ 
+    <global>
+        <resources>
+            <add_keyingredient_attribute>
+                <setup>
+                    <module>Wineshop_KeyIngredient</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </add_keyingredient_attribute>
+            <add_keyingredient_attribute_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </add_keyingredient_attribute_write>
+            <add_keyingredient_attribute_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </add_keyingredient_attribute_read>
+        </resources>
+    </global>
+</config>

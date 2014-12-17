@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+    <head>
+        <?php echo $this->getChildHtml('head') ?>
+        <script>
+
+            $j(document).ready(function() {
+
+                $j("#price_range").ionRangeSlider({
+                    min: 0,
+                    max: 1000,
+                    from: 100,
+                    to: 400,
+                    type: 'double',
+                    step: 1,
+                    prefix: "Dkr",
+                    prettify: true,
+                    hasGrid: true
+                });
+
+            });
+        </script>
+    </head>                  
+    <body>      
+        <?php echo $this->getChildHtml('after_body_start') ?>           
+        <div id="header" class="container">
+            <?php echo $this->getChildHtml('header') ?>   
+            <div class="clear"></div>
+        </div>
+        <div id="main_content" class="container">
+            <div class="grid_5">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+            </div>
+            <div class="left_side_bar grid_1">
+
+                <?php echo $this->getChildHtml('left') ?> 
+            </div> 
+            <div class="grid_3">
+                <?php echo $this->getChildHtml('content') ?>    
+            </div>
+            <div class="grid_1">
+                <?php echo $this->getChildHtml('right') ?> 
+            </div>
+            <div class="clear"></div>
+        </div>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </body>                 
+</html>

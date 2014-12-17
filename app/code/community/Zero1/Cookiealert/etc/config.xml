@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Zero1_Cookiealert>
+            <version>0.1.0</version>
+        </Zero1_Cookiealert>
+    </modules>
+    
+    <global>        
+        <blocks>
+            <cookiealert>
+                <class>Zero1_Cookiealert_Block</class>
+            </cookiealert>
+        </blocks>
+        
+        <models>
+            <cookiealert>
+                <class>Zero1_Cookiealert_Model</class>
+            </cookiealert>
+        </models>
+
+        <helpers>
+            <cookiealert>
+                <class>Zero1_Cookiealert_Helper</class>
+            </cookiealert>
+        </helpers>
+    </global>
+	
+	<frontend>
+	   <routers>
+            <cookiealert>
+                <use>standard</use>
+                <args>
+                    <module>Zero1_Cookiealert</module>
+                    <frontName>cookiealert</frontName>
+                </args>
+            </cookiealert>
+        </routers>
+        
+		<layout>
+			<updates>
+				<cookiealert>
+					<file>cookiealert.xml</file>
+				</cookiealert>
+			</updates>
+		</layout>
+		
+		<translate>
+            <modules>
+                <Zero1_Cookiealert>
+                    <files>
+                        <default>Zero1_Cookiealert.csv</default>
+                    </files>
+                </Zero1_Cookiealert>
+            </modules>
+        </translate>		
+	</frontend>
+	
+	<default>
+        <cookiealert>
+            <options>
+                <enabled>1</enabled>
+                <cms_page>home</cms_page>
+            </options>
+        </cookiealert>
+    </default>
+</config>

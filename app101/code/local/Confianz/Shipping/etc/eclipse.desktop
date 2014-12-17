@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_IN]=gnome-panel-launcher
+Exec=/home/rabeesh/adt-bundle-linux-x86_64-20131030/eclipse/eclipse
+Name[en_IN]=Eclipse-Android
+Name=Eclipse-Android
+Icon=gnome-panel-launcher

@@ -1,0 +1,12 @@
+<?php if($toplinks && is_array($toplinks)): ?>
+
+    <?php echo $this->getChildHtml() ?>
+    <?php foreach($toplinks as $_toplink): ?>
+    <a <?php echo $_toplink['aParams'] ?>><?php echo $_toplink['innerText'] ?></a>
+    <?php endforeach; ?>
+
+<?php endif; ?>
+
+
+
+							

@@ -1,0 +1,33 @@
+<?php $_items = $this->getReviewsCollection()->getItems();?>
+
+    <?php if (count($_items)):?>
+        <h2><?php echo $this->__('Customer Reviews') ?></h2>
+        <?php echo $this->getChildHtml('toolbar') ?>
+        
+        <?php foreach ($_items as $_review):?>
+            
+               
+          
+                <?php $_votes = $_review->getRatingVotes(); ?>
+                <?php if (count($_votes)): ?>
+              
+                        <?php foreach ($_votes as $_vote): ?>
+                       
+                            <?php /* echo $this->escapeHtml($_vote->getRatingCode()) */?>
+                          
+                               <!-- <div class="rating-box">
+                                    <div class="rating" style="width:<?php echo $_vote->getPercent() ?>%;"></div>
+                                </div>-->
+                   
+                        <?php endforeach; ?>
+             
+                <?php endif; ?>
+              <p  class="product_review_desc">  <?php echo nl2br($this->escapeHtml($_review->getDetail())) ?>
+                <span>-- <?php echo $this->__('<span>%s</span>', $this->escapeHtml($_review->getNickname())) ?></span>
+         </p> 
+        <?php endforeach; ?>
+       
+        <?php echo $this->getChildHtml('toolbar') ?>
+    <?php endif;?>
+    <?php echo $this->getChildHtml('review_form') ?>
+

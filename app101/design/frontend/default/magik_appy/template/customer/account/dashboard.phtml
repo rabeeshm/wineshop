@@ -1,0 +1,18 @@
+
+<div class="page-title_a">
+      <h2 class="page-title_a"><?php echo $this->__('My Dashboard') ?></h2>
+</div>
+<div class="dashboard">
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+    <?php echo $this->getChildHtml('hello') ?>
+    <?php echo $this->getChildHtml('top') ?>
+    
+        <div>
+            <h3><?php echo $this->__('Account Information') ?></h3>
+        </div>
+        <?php echo $this->getChildHtml('info') ?>
+        <?php echo $this->getChildHtml('address') ?>
+   
+    <?php echo $this->getChildHtml('info1') ?>
+    <?php echo $this->getChildHtml('info2') ?>
+</div>

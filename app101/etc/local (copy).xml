@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <install>
+            <date><![CDATA[Fri, 03 Jan 2014 13:10:59 +0000]]></date>
+        </install>
+        <crypt>
+            <key><![CDATA[confianz]]></key>
+        </crypt>
+        <disable_local_modules>false</disable_local_modules>
+        <resources>
+            <db>
+                <table_prefix><![CDATA[wine_]]></table_prefix>
+            </db>
+            <default_setup>
+                <connection>
+               <!--   <host><![CDATA[localhost]]></host>
+                    <username><![CDATA[root]]></username>
+                    <password><![CDATA[confianz]]></password>-->
+
+                     <host><![CDATA[10.254.101.35]]></host>
+                    <username><![CDATA[root]]></username>
+                    <password><![CDATA[B33rb3lly]]></password>
+
+                    <dbname><![CDATA[wineshop]]></dbname>
+                    <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
+                    <model><![CDATA[mysql4]]></model>
+                    <type><![CDATA[pdo_mysql]]></type>
+                    <pdoType><![CDATA[]]></pdoType>
+                    <active>1</active>
+                </connection>
+            </default_setup>
+        </resources>
+        <session_save><![CDATA[files]]></session_save>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <frontName><![CDATA[admin]]></frontName>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

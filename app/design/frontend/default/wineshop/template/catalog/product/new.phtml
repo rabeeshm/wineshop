@@ -1,0 +1,74 @@
+<div class="new_product_container">
+    <?php if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
+        <?php $_columnCount = $this->getColumnCount(); ?>
+        <?php $i = 0;
+        foreach ($_products->getItems() as $_product):
+            ?>
+            <div>
+                <span class="new_label"></span>
+                <span class="product_image">
+                    <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>" class="product-image">
+                        <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(200) ?>" width="135" height="180" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" /></a>
+                </span>
+                <h5 class="product_name"><?php
+                    $str = $this->htmlEscape($_product->getName());
+                    (strlen($str) > 40) ? $name = substr($str, 0, 40) . '...' : $name = $str;
+                    echo $name;
+                    ?></h5>
+                <span class="product_sub_text">
+                    <!-- Get Key ingredients --> 
+                    <?php
+                    $product_details = Mage::getModel('catalog/product')->load($_product->getId());
+                    if ($product_details->getKeyingredient()):
+                        ?> 
+                        <?php
+                        $str = nl2br($product_details->getKeyingredient());
+                        echo substr($str, 0, 28);
+                        ?>...
+        <?php endif; ?>
+                    <!-- End Get Key ingredients -->
+                </span>
+                <span class="product_price">
+
+                    <?php
+                    $product = Mage::getModel('catalog/product')->load($_product->getId());
+                    $price = $product->getPrice();
+                    $webprice = $product->getwebprice();
+                    $specialprice = $product->getFinalPrice();
+                    $_finalPriceInclTax = Mage::helper('tax')->getPrice($_product, $_product->getFinalPrice(), true);
+
+		    $fxdTax = $product->getFixedTax();
+		    $fxdTaxrate = $fxdTax[0]['value'];
+		    $taxrate = $_product->getData('tax_percent');
+		    $fixedtax_amount = $fxdTaxrate * $taxrate;
+		    $_finalPriceInclTax = $_finalPriceInclTax + $fixedtax_amount + $fxdTaxrate;
+
+                    if (number_format($specialprice, 2)  == number_format($price, 2)) {
+                        ?>
+                        <span class="price">Dkr <?php echo number_format($_finalPriceInclTax, 2); ?></span>
+<!--                        <span class="exclude_tax">(<?php //echo $this->__('Excluding vat');?>:  Dkr <?php //echo number_format($price, 2); ?>)</span>-->
+        <?php } else {
+            ?>
+                        <div class="regular-price">
+                            <span class="price">Dkr <?php echo number_format($_finalPriceInclTax, 2); ?></span>
+<!--                            <span class="exclude_tax"><?php //echo $this->__('Excluding vat');?>: Dkr <?php //echo number_format($price, 2); ?></span>-->
+                        </div>
+        <?php } ?>
+                </span>
+                <a href="<?php echo $_product->getProductUrl() ?>" class="product_view_more">Se mere</a>
+                <a  class="product_add_to_cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')">Læg i kurv</a>
+            </div>
+    <?php endforeach; ?>
+<?php endif; ?>
+</div>
+
+
+
+
+
+
+
+
+
+
+

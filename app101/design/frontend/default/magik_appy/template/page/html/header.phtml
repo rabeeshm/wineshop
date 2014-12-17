@@ -1,0 +1,41 @@
+<?php
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+    <div class="header">
+        <?php if ($this->getIsHomePage()):?>
+        <h1 id="logo"><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getSkinUrl('images/logo.png'); ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+        <?php else:?>
+        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" id="logo"><img src="<?php echo $this->getSkinUrl('images/logo.png'); ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+        <?php endif?>
+	
+	<div class="header_right">
+		<!--div class="select_curr_lang">
+	  	<?php //echo $this->getChildHtml('store_language') ?> <?php //echo $this->getChildHtml('store_switcher'); ?>
+		</div-->
+		<div class="cart_details"> 
+		<div class="cart_top">
+		<h3><img alt="" src="<?php echo $this->getSkinUrl('images/cart_icon.png'); ?>"> <a href="<?php echo $this->getUrl('checkout/cart') ?>"><span><?php if(Mage::helper('checkout/cart')->getSummaryCount() > 1) { echo Mage::helper('checkout/cart')->getSummaryCount() .' items'; } elseif(Mage::helper('checkout/cart')->getSummaryCount() == 1) { echo "1 item"; }  else {echo "0 items"; } ?></span></a> </h3>
+		</div>
+		</div>
+		<?php echo $this->getChildHtml('topSearch') ?>
+		<!--div class="header_inner2"-->   
+			<!--div style="float:right;"-->
+				
+        			<div class="toplinks"><?php echo $this->getChildHtml('topLinks') ?>
+        			<p class="welcome-msg"><?php echo $this->getWelcome()?></p>
+        			</div>
+			<!--/div-->
+ 			<?php echo $this->getChildHtml('topContainer'); ?>
+	
+		<!--/div-->
+		<?php //echo $this->getChildHtml('topMenu') ?>
+ 	</div>
+        
+       
+    </div>
+
+
+
+

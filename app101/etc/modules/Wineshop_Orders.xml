@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <Wineshop_Erporders>
+            <active>true</active>
+            <codePool>local</codePool><!-- this could be also 'local' -->
+            <depends>
+                <Mage_Api />
+            </depends>
+        </Wineshop_Erporders>
+    </modules>
+</config>

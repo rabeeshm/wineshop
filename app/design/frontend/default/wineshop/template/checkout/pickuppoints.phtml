@@ -1,0 +1,16 @@
+<?php foreach ($this->result as $data): ?>
+    <li>
+        <input name="shipping_method" type="radio" value="confianz_shipping_defualt_pickuppoint"
+               data-element="<?php echo $data['method'] ?>_<?php echo $data['zip'] ?>" id="s_method_confianz_shipping_defualt_pickuppoint" class="radio pickuppoint"/>
+        <label for="s_method_<?php echo $data['code'] ?>_<?php echo $data['method'] ?>"><?php echo $data['methodTitle'] ?><?php //echo $this->escapeHtml($_rate->getMethodTitle())   ?>
+            <?php //$_excl = $this->getShippingPrice($data['price'], $this->helper('tax')->displayShippingPriceIncludingTax()); ?>
+            <?php //$_incl = $this->getShippingPrice($data['price'], true); ?>
+            <span class="price">Dkr<?php echo $data['price']; ?></span> 
+            <?php //if ($this->helper('tax')->displayShippingBothPrices() && $_incl != $_excl): ?>
+            <?php //echo $this->__('Incl. Tax'); ?> <?php //echo $_incl; ?>
+            <?php //endif; ?>
+        </label>
+    </li>
+    
+<?php endforeach;?>
+  

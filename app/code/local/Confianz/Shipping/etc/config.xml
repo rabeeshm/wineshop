@@ -1,0 +1,44 @@
+<!--?xml version="1.0"?-->
+<config>
+    <modules>
+        <Confianz_Shipping>
+            <version>0.1.0</version>
+        </Confianz_Shipping>
+    </modules>
+    <frontend>
+        <routers>
+            <shipping>
+                <use>standard</use>
+                <args>
+                    <module>Confianz_Shipping</module>
+                    <frontName>shipping</frontName>
+                </args>
+            </shipping>
+        </routers>
+    </frontend>
+    <global>
+        <models>
+            <confianz_shipping>
+                <class>Confianz_Shipping_Model</class>
+            </confianz_shipping>
+        </models>
+        <helpers>
+            <confianz_shipping>
+                <class>Confianz_Shipping_Helper</class>
+            </confianz_shipping>
+        </helpers>
+    </global>
+    <default>
+         <carriers>
+            <confianz_shipping>
+                <active>1</active>
+                <sort_order>10</sort_order>
+                <model>confianz_shipping/carrier</model>
+                <title>Confianz Shipping Carrier</title>
+                <sort_order>10</sort_order>
+                <sallowspecific>1</sallowspecific>
+                <express_max_weight>3</express_max_weight>
+            </confianz_shipping>
+        </carriers>
+    </default>
+</config>

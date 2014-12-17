@@ -1,0 +1,7 @@
+
+<?php echo $this->htmlEscape($this->getMethod()->getTitle()) ?><br />
+<?php if ($this->getInfo()->getLastTransId() == ''): ?>
+    <em><?php echo Mage::helper('moneybookers')->__('You will be redirected to our secure payment page when you place an order.') ?></em>
+<?php else: ?>
+    <?php echo Mage::helper('moneybookers')->__('Moneybookers Transaction ID: %s', $this->htmlEscape($this->getInfo()->getLastTransId())) ?><br />
+<?php endif; ?>

@@ -1,0 +1,219 @@
+<?php $_helper = $this->helper('catalog/output'); ?>
+<?php
+$_product = $this->getProduct();
+$_id = $_product->getId();
+$storeId = Mage::app()->getStore()->getId();
+$products = Mage::getModel('catalog/product')->setStoreId($storeId);
+$products = $products->getCollection();
+$products->addAttributeToFilter('status', 1); //enabled
+$products->addAttributeToFilter('visibility', 1); //catalog, search 
+?>
+
+<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
+</script>
+
+<form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if ($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+    <?php echo $this->getBlockHtml('formkey') ?>
+    <div>
+        <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
+        <input type="hidden" name="related_product" id="related-products-field" value="" />
+    </div>
+
+    <div class="product_detail_left">
+        <div class="product_image">
+            <?php echo $this->getChildHtml('media') ?>
+        </div>
+        <span class="review_link">
+
+            <?php echo $this->getReviewsSummaryHtml($_product, false, true) ?>
+
+        </span>
+        <div class="product_review_section">
+
+            <?php echo $this->getChildHtml('reviews') ?>
+
+        </div>
+        <center>
+
+            <?php /* ?><a href="<?php echo $this->getReviewsUrl() ?>" class="view_more_reviews">View More Reviews</a></center><?php */ ?>
+    </div>
+    <div class="product_detail_right">
+        <h5 class="product_name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h5>
+
+        <span class="product_sub_text"> 
+            <!-- Get Key ingredients --> 
+            <?php
+            $product_details = Mage::getModel('catalog/product')->load($_product->getId());
+            if ($product_details->getKeyingredient()):
+                ?> 
+                <?php echo nl2br($product_details->getKeyingredient()) ?> <?php endif; ?>
+
+            <!-- End Get Key ingredients -->
+        </span>
+        <div class="product_price"> 
+            <div class="left">
+
+                <?php
+                $product = Mage::getModel('catalog/product')->load($_product->getId());
+                $price = $product->getPrice();
+                $webprice = $product->getwebprice();
+                $specialprice = $product->getFinalPrice();
+                $comboprice = $_product->getComboPrice();
+                
+                $_finalPriceInclTax = Mage::helper('tax')->getPrice($_product, $_product->getFinalPrice(), true);
+
+                $fxdTax = $product->getFixedTax();
+                $fxdTaxrate = $fxdTax[0]['value'];
+                $taxrate = $_product->getData('tax_percent');
+                $fixedtax_amount = $fxdTaxrate * $taxrate;
+                $_finalPriceInclTax = $_finalPriceInclTax + $fixedtax_amount + $fxdTaxrate;
+                
+                $combopriceWithFixedTax = $comboprice + $fxdTaxrate;
+                $combopriceWithTax = $combopriceWithFixedTax + ($combopriceWithFixedTax * $taxrate );
+
+                if ($specialprice == $price) {
+                    ?>
+                    <span class="regular_price"><?php echo $this->__('Regular Price'); ?> : <span> Dkr<?php echo number_format($_finalPriceInclTax, 2); ?></span></span>
+<!--                    <span class="exclude_tax">(<?php //echo $this->__('Excluding vat'); ?>:  Dkr <?php //echo number_format($price, 2); ?>)</span>-->
+                <?php } else { ?>
+                    <span class="regular_price"><?php echo $this->__('Regular Price'); ?> : <span> Dkr <?php echo number_format($_finalPriceInclTax, 2); ?></span></span>
+                    <span class="exclude_tax">(<?php echo $this->__('Excluding vat'); ?>:  Dkr <?php echo number_format($price, 2); ?>)</span>
+
+                    <?php /* ?><span class="special_price" >Special Price  : <span>Dkr <?php echo number_format($specialprice,2); ?> </span></span><?php */ ?>
+
+                <?php } ?>
+
+                <div class="qty_section">
+                    <?php echo $this->getChildHtml('addtocart') ?>
+                </div>
+            </div>
+            <div class="right">
+                <span class="adv_head"><?php echo $this->__('Save on bulk purchase'); ?></span>
+                <div class="adv_content">
+                    <span class="adv_buy">
+                        <?php echo $this->__('Buy any'); ?>  <b>18</b><span> <?php echo $this->__('bottles'); ?></span>
+                    </span>
+
+
+                    <span class="special_price"><?php echo $this->__('Special Offer'); ?> : 
+                        <!-- Get Combo price --> 
+                        <?php /* if ($_product->getComboPrice()): ?> 
+                          <?php echo nl2br($_product->getComboPrice()) ?> <?php endif; */ ?>
+
+                        <!-- End Get Combo price -->
+                        <span>Dkr 
+                            <?php
+                            if ($comboprice < $price) {
+
+                                echo number_format($combopriceWithTax, 2);
+                            }
+                            ?>
+                        </span><br>
+                        <span><?php echo $this->__('Regular Price'); ?> :
+                            <span>Dkr000 <?php echo number_format($_finalPriceInclTax, 2); ?></span>
+                        </span>
+                        <?php
+                        $_product = $this->getProduct();
+                        $products->addAttributeToSelect('*');
+                        // $products->getSelect()->limit( 1 );
+                        foreach ($products as $p) {
+                            echo "ID " . $p->getId() . "<br>";
+                            echo "regular price " . $p->getPrice() . "<br>";
+                            echo "special price " . $p->getSpecialPrice() . "<br>";
+                        }
+                        ?></span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="product_detail_desc">
+            <p>
+                <?php //echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description')  ?> 
+            </p>
+            <?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html): ?>
+                <p> <?php echo $html; ?></p>
+            <?php endforeach; ?>
+
+
+        </div>
+
+</form>
+
+
+
+<div class="product-collateral">
+    <?php /* foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
+      <div class="box-collateral <?php echo "box-{$alias}"?>">
+      <?php if ($title = $this->getChildData($alias, 'title')):?>
+      <h2><?php echo $this->escapeHtml($title); ?></h2>
+      <?php endif;?>
+      <?php echo $html;?>
+      </div>
+      <?php endforeach */; ?>
+    <?php /* echo $this->getChildHtml('upsell_products') */ ?>
+    <?php echo $this->getChildHtml('product_additional_data') ?>
+</div>
+
+
+
+</div>
+
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    var productAddToCartForm = new VarienForm('product_addtocart_form');
+    productAddToCartForm.submit = function(button, url) {
+        if (this.validator.validate()) {
+            var form = this.form;
+            var oldUrl = form.action;
+
+            if (url) {
+                form.action = url;
+            }
+            var e = null;
+            try {
+                this.form.submit();
+            } catch (e) {
+            }
+            this.form.action = oldUrl;
+            if (e) {
+                throw e;
+            }
+
+            if (button && button != 'undefined') {
+                button.disabled = true;
+            }
+        }
+    }.bind(productAddToCartForm);
+
+    productAddToCartForm.submitLight = function(button, url) {
+        if (this.validator) {
+            var nv = Validation.methods;
+            delete Validation.methods['required-entry'];
+            delete Validation.methods['validate-one-required'];
+            delete Validation.methods['validate-one-required-by-name'];
+            // Remove custom datetime validators
+            for (var methodName in Validation.methods) {
+                if (methodName.match(/^validate-datetime-.*/i)) {
+                    delete Validation.methods[methodName];
+                }
+            }
+
+            if (this.validator.validate()) {
+                if (url) {
+                    this.form.action = url;
+                }
+                this.form.submit();
+            }
+            Object.extend(Validation.methods, nv);
+        }
+    }.bind(productAddToCartForm);
+    //]]>
+</script>
+
+
+
+
+

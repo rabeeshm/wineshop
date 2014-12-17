@@ -1,0 +1,67 @@
+<h5 class="category_head"> <?php echo $this->__('Categories') ?> </h5>
+    <?php
+$max = $_GET['max'];
+$min = $_GET['min'];
+?>
+<?php echo 1; ?>
+<?php $_helper = Mage::helper('catalog/category') ?>
+<?php $_categories = $_helper->getStoreCategories(); ?>
+<?php $_categories = Mage::getModel('catalog/category')->getCategories(132);
+print_r($_categories);?>
+<?php $currentCat = Mage::registry('current_category');?>
+<?php $currentCategory = Mage::registry('current_category') ?>
+    <?php if (count($_categories) > 0): ?>
+    <ul id="nav" class="category_menu">
+        <?php foreach ($_categories as $_category): ?>
+            <?php
+            if ($currentCat->getId() == $_category->getId()) {
+                $class = 'active items';
+            } else {
+                $class = '';
+            }
+            ?>
+            <li class="<?php echo $class; ?>">
+                <a href="<?php echo $_helper->getCategoryUrl($_category) ?><?php if (!empty($min) && !empty($max)) { ?>?min=<?php echo $min; ?>&max=<?php echo $max; ?> <?php } ?>" class="MenuBarItemSubmenu"><?php echo $_category->getName() ?></a>
+                    <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
+                    <?php $_subcategories = $_category->getChildrenCategories() ?>
+                    <?php if (count($_subcategories) > 0): ?>
+                    <ul>
+                        <?php foreach ($_subcategories as $_subcategory): ?>
+                            <?php
+                            if ($currentCat->getId() == $_subcategory->getId()) {
+                                $class = 'active items';
+                            } else {
+                                $class = '';
+                            }
+                            ?>
+                            <li class="<?php echo $class; ?>">
+                                <a href="<?php echo $_helper->getCategoryUrl($_subcategory); ?><?php if (!empty($min) && !empty($max)) { ?>?min=<?php echo $min; ?>&max=<?php echo $max; ?> <?php } ?>" class="MenuBarItemSubmenu">
+                                    <?php echo $_subcategory->getName() ?></a>
+
+                <?php $_subcategory = Mage::getModel('catalog/category')->load($_subcategory->getId()) ?>
+                                            <?php $_subsubcategories = $_subcategory->getChildrenCategories() ?>
+                                            <?php if (count($_subsubcategories) > 0): ?>
+                                    <ul>
+                                        <?php foreach ($_subsubcategories as $_subsubcategory): ?>
+                                       <?php if ($currentCat->getId() == $_subsubcategory->getId()) {
+                                $class = 'active items';
+                            } else {
+                                $class = '';
+                            } ?>
+                                            <li class="<?php echo $class; ?>">
+                                                <a href="<?php echo $_helper->getCategoryUrl($_subsubcategory) ?> <?php if (!empty($min) && !empty($max)) { ?>?min=<?php echo $min; ?>&max=<?php echo $max; ?> <?php } ?>">
+                                        <?php echo $_subsubcategory->getName() ?>
+                                                </a>
+                                            </li>
+                                <?php endforeach; ?>
+                                    </ul>
+                        <?php endif; ?>
+                                </a>
+                            </li>
+            <?php endforeach; ?>
+                    </ul>
+        <?php endif; ?>
+            </li>
+    <?php endforeach; ?>
+    </ul>
+<?php endif; ?>
