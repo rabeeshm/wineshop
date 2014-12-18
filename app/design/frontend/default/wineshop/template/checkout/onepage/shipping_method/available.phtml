@@ -27,7 +27,6 @@
 <?php /** @var $this Mage_Checkout_Block_Onepage_Shipping_Method_Available */ ?>
 <?php $_shippingRateGroups = $this->getShippingRates();
 ?>
-
 <?php if (!$_shippingRateGroups): ?>
     <p><?php echo $this->__('Sorry, no quotes are available for this order at this time.') ?></p>
 <?php else: ?>
@@ -45,128 +44,73 @@
                     <?php
                     $_sole = $_sole && count($_rates) == 1;
                     foreach ($_rates as $_rate):
-
                         $homeValue = explode("_", $_rate->getMethod());
                         $stringHome = $homeValue[count($homeValue) - 1];
                         ?>
-                        <?php $shippingCodePrice[] = "'" . $_rate->getCode() . "':" . (float) $_rate->getPrice(); ?>
-                        <?php if ($stringHome == 'company') { ?>    
-                            <li>
-                                <?php if ($_rate->getErrorMessage()): ?>
-                                    <ul class="messages">
-                                        <li class="error-msg"><ul><li><?php echo $this->escapeHtml($_rate->getErrorMessage()) ?></li></ul>
-                                        </li>
-                                    </ul>
+                        <?php $shippingCodePrice[] = "'" . $_rate->getCode() . "':" . (float) $_rate->getPrice(); ?>   
+                        <li>
+                            <?php if ($_rate->getErrorMessage()): ?>
+                                <ul class="messages">
+                                    <li class="error-msg"><ul><li><?php echo $this->escapeHtml($_rate->getErrorMessage()) ?></li></ul>
+                                    </li>
+                                </ul>
+                            <?php else: ?>
+                                <?php if ($_sole) : ?>
+                                    <span class="no-display">
+                                        <input name="shipping_method" type="radio" value="<?php echo $_rate->getCode() ?>" id="s_method_<?php echo $_rate->getCode() ?>" checked="checked" />
+                                    </span>
                                 <?php else: ?>
-                                    <?php if ($_sole) : ?>
-                                        <span class="no-display">
-                                            <input name="shipping_method" type="radio" value="<?php echo $_rate->getCode() ?>" id="s_method_<?php echo $_rate->getCode() ?>" checked="checked" />
-                                        </span>
-                                    <?php else: ?>
-                                        <input name="shipping_method" data-element="<?php echo $_rate->getCode() ?>" type="radio" value="<?php echo $_rate->getCode() ?>" id="s_method_<?php echo $_rate->getCode() ?>"<?php if ($_rate->getCode() === $this->getAddressShippingMethod()) echo ' checked="checked"' ?> class="radio"/>
+                                    <input name="shipping_method" data-element="<?php echo $_rate->getCode() ?>" type="radio" value="<?php echo $_rate->getCode() ?>" id="s_method_<?php echo $_rate->getCode() ?>"<?php if ($_rate->getCode() === $this->getAddressShippingMethod()) echo ' checked="checked"' ?> class="radio"/>
 
-                                        <?php if ($_rate->getCode() === $this->getAddressShippingMethod()): ?>
-                                            <script type="text/javascript">
-                                                //<![CDATA[
-                                                lastPrice = <?php echo (float) $_rate->getPrice(); ?>;
-                                                //]]>
-                                            </script>
-                                        <?php endif; ?>
-
+                                    <?php if ($_rate->getCode() === $this->getAddressShippingMethod()): ?>
+                                        <script type="text/javascript">
+                                            //<![CDATA[
+                                            lastPrice = <?php echo (float) $_rate->getPrice(); ?>;
+                                            //]]>
+                                        </script>
                                     <?php endif; ?>
-                                    <label for="s_method_<?php echo $_rate->getCode() ?>"><?php echo $this->escapeHtml($_rate->getMethodTitle()) ?>
-                                        <?php $_excl = $this->getShippingPrice($_rate->getPrice(), $this->helper('tax')->displayShippingPriceIncludingTax()); ?>
-                                        <?php $_incl = $this->getShippingPrice($_rate->getPrice(), true); ?>
-                                        <?php //echo $_excl; ?>
-                                        <?php if ($this->helper('tax')->displayShippingBothPrices() && $_incl != $_excl): ?>
-                                            (<?php //echo $this->__('Incl. Tax');                ?> <?php //echo $_incl;                    ?>)
-                                        <?php endif; ?>
-                                    </label>
-                                <?php endif ?>
-                            </li>
-                        <?php } elseif ($stringHome == 'home') { ?>
-                            <?php if ($i == 1) { ?>
-                                <li>
-                                    <input name="show_homedelivery" type="radio" id="show_homedelivery" class="radio">
-                                    <label for=""><?php echo $this->__('Delivery to home address') ?></label>
-                                    <ul id="home_delivery_methods" style="margin-left: 50px; display: none">
-                                    <?php } ?>  
+                                <?php endif; ?>
+                                <label for="s_method_<?php echo $_rate->getCode() ?>"><?php echo $this->escapeHtml($_rate->getMethodTitle()) ?>
+                                    <?php $_excl = $this->getShippingPrice($_rate->getPrice(), $this->helper('tax')->displayShippingPriceIncludingTax()); ?>
+                                    <?php $_incl = $this->getShippingPrice($_rate->getPrice(), true); ?>
+                                    <?php echo $_excl; ?>
+                                    <?php if ($this->helper('tax')->displayShippingBothPrices() && $_incl != $_excl): ?>
+                                        (<?php echo $this->__('Incl. Tax'); ?> <?php echo $_incl; ?>)
+                                    <?php endif; ?>
+                                </label>
+                            <?php endif ?>
+                            <?php if ($stringHome == 'pickuppoint') { ?>
+                                <ul id="pickup_points" style="margin-left: 50px; display: none">
                                     <li>
-                                        <?php if ($_rate->getErrorMessage()): ?>
-                                            <ul class="messages">
-                                                <li class="error-msg"><ul><li><?php echo $this->escapeHtml($_rate->getErrorMessage()) ?></li></ul>
-                                                </li>
-                                            </ul>
-                                        <?php else: ?>
-                                            <?php if ($_sole) : ?>
-                                                <span class="no-display">
-                                                    <input name="shipping_method" type="radio" value="<?php echo $_rate->getCode() ?>" id="s_method_<?php echo $_rate->getCode() ?>" checked="checked" />
-                                                </span>
-                                            <?php else: ?>
-                                                <input name="shipping_method" data-element="<?php echo $_rate->getCode() ?>" type="radio" value="<?php echo $_rate->getCode() ?>" id="s_method_<?php echo $_rate->getCode() ?>"<?php if ($_rate->getCode() === $this->getAddressShippingMethod()) echo ' checked="checked"' ?> class="radio"/>
-
-                                                <?php if ($_rate->getCode() === $this->getAddressShippingMethod()): ?>
-                                                    <script type="text/javascript">
-                                                        //<![CDATA[
-                                                        lastPrice = <?php echo (float) $_rate->getPrice(); ?>;
-                                                        //]]>
-                                                    </script>
-                                                <?php endif; ?>
-
-                                            <?php endif; ?>
-                                            <label for="s_method_<?php echo $_rate->getCode() ?>"><?php echo $this->escapeHtml($_rate->getMethodTitle()) ?>
-                                                <?php $_excl = $this->getShippingPrice($_rate->getPrice(), $this->helper('tax')->displayShippingPriceIncludingTax()); ?>
-                                                <?php $_incl = $this->getShippingPrice($_rate->getPrice(), true); ?>
-                                                <?php echo $_excl; ?>
-                                                <?php if ($this->helper('tax')->displayShippingBothPrices() && $_incl != $_excl): ?>
-                                                    (<?php echo $this->__('Incl. Tax'); ?> <?php echo $_incl; ?>)
-                                                <?php endif; ?>
-                                            </label>
-                                        <?php endif ?>
-                                    </li>     
-                                    <?php
-                                    if ($i == count($_rate)) { //exit;
-                                        $flag = true;
-                                        ?>          
-                                    </ul> 
-                                </li>
+                                        <?php $Data = Mage::getSingleton('core/session')->getPickPoints(); ?>
+                                        <select name="pickup_pin" id="pickup_pin">
+                                            <option value="0"><?php echo $this->__('-select pickup point-'); ?></option>
+                                            <?php foreach ($Data as $row): ?>
+                                                <option value="<?php echo $row['postalCode'] ?>-<?php echo $row['id'] ?>">
+                                                    <?php echo $row['name'] ?>, <?php echo $row['address'] ?>, <?php echo $row['city'] ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </li>
+                                    <span style="display: none" class="pickup_please-wait" id="shipping-method-pickup-please-wait">
+                                        <img class="v-middle" title="<?php echo $this->__('Loading data...') ?>" alt="<?php echo $this->__('Loading data...') ?>" 
+                                             src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif'); ?>"><?php echo $this->__('Loading data...') ?></span>
+                                    <div id="list_pickup_points">
+                                    </div>
+                                </ul>
                                 <?php
-                            } $i++;
-                        }
-                        ?>
-                    <?php endforeach; ?>
-                    <?php if ($flag) { ?>
-                        <li>       
-                            <input name="show_pickup_points" type="radio" id="show_pickup_points" class="radio">
-                            <label for=""><?php echo $this->__('Delivery to pickup point') ?></label>
-                            <ul id="pickup_points" style="margin-left: 50px; display: none">
-                                <li>
-                                    <?php $Data = Mage::getSingleton('core/session')->getPickPoints(); ?>
-                                    <select name="pickup_pin" id="pickup_pin">
-                                        <option value="0"><?php echo $this->__('-select pickup point-'); ?></option>
-                                        <?php foreach ($Data as $row): ?>
-                                            <option value="<?php echo $row['postalCode'] ?>">
-                                                <?php echo $row['name'] ?>, <?php echo $row['address'] ?>, <?php echo $row['city'] ?></option>
-                                        <?php endforeach; ?>
-                                    </select>
-                                </li>
-                                <span style="display: none" class="pickup_please-wait" id="shipping-method-pickup-please-wait">
-                                    <img class="v-middle" title="<?php echo $this->__('Loading data...') ?>" alt="<?php echo $this->__('Loading data...') ?>" 
-                                         src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif'); ?>"><?php echo $this->__('Loading data...') ?></span>
-                                <div id="list_pickup_points">
-
-
-                                </div>
-                            </ul>
+                            }
+                            ?>
                         </li>
-                    <?php } ?>
+                    <?php endforeach; ?>
                 </ul>   
             </dd>
         <?php endforeach; ?>
     </dl>
     <script type="text/javascript">
         //<![CDATA[
-    <?php if (!empty($shippingCodePrice)): ?>
+    <?php
+    if (!empty($shippingCodePrice)):
+        ?>
             var shippingCodePrice = {<?php echo implode(',', $shippingCodePrice); ?>};
     <?php endif; ?>
 
@@ -176,13 +120,8 @@
                     //show/hide home delivery radio button
                     arr = el.getValue().split('_');
                     strFine = arr[arr.length - 1];
-                    if (strFine != 'home') {
-                        jQuery("#show_homedelivery").removeAttr('checked');
-                        jQuery('#home_delivery_methods').hide();
-                        jQuery("#show_pickup_points").removeAttr('checked');
-                        //jQuery('#list_pickup_points').hide();
+                    if (strFine == 'home' || strFine == 'company') {
                         jQuery('#pickup_points').hide();
-
                     }
                     var getShippingCode = el.getValue();
     <?php if (!empty($shippingCodePrice)): ?>
@@ -204,66 +143,26 @@
 
         });
         //]]>
-
-        jQuery("#show_homedelivery").on("click", function() {
-            jQuery('#home_delivery_methods').show();
-            jQuery('#pickup_points').hide();
-            jQuery("#show_pickup_points").removeAttr('checked');
-            jQuery("input:radio[name='shipping_method']").each(function(i) {
-                this.checked = false;
-            });
-        });
-
-
-        jQuery("#show_pickup_points").on("click", function() {
+        jQuery("#s_method_confianz_shipping_delivery_to_pickuppoint").on("click", function() {
             jQuery('#pickup_points').show();
-            jQuery('#home_delivery_methods').hide();
-            jQuery("#show_homedelivery").removeAttr('checked');
-            jQuery("input:radio[name='shipping_method']").each(function(i) {
-                this.checked = false;
-            });
         });
 
         jQuery("#pickup_pin").change(function() {
-            jQuery("#shipping-method-buttons-container :button").attr('disabled', 'disabled');
-            jQuery("#shipping-method-pickup-please-wait").show();
             jQuery("#list_pickup_points").hide();
             var value = jQuery(this).val();
             new Ajax.Request("<?php echo $this->getUrl('shipping/shipping/ajax') ?>", {
                 method: 'Post',
                 parameters: {postalCode: value},
                 onComplete: function(transport) {
-                    jQuery("#list_pickup_points").show();
-                    jQuery('#list_pickup_points').innerHTML = "";
-                    jQuery('#list_pickup_points').innerHTML = transport.responseText;
-                    jQuery('#list_pickup_points').html(transport.responseText);
-                    jQuery("#shipping-method-buttons-container :button").removeAttr('disabled');
-                    jQuery("#shipping-method-pickup-please-wait").hide();
 
                 }
             });
         });
-        jQuery('.pickuppoint').live("click", function() {
-            $dat = jQuery(this).data("element");
-            new Ajax.Request("<?php echo $this->getUrl('shipping/shipping/saveKey') ?>", {
-                method: 'Post',
-                parameters: {key: $dat},
-                onComplete: function(transport) {
-                    //console.log(transport.responseText);
-                }
-            });
-        });
+        jQuery(document).ready(function() {
+            if (jQuery("#s_method_confianz_shipping_delivery_to_pickuppoint").prop("checked")) {
+                jQuery('#pickup_points').show();
+            }
 
-        jQuery('input[type="radio"][name="shipping_method"]').live("click", function() {
-            $dat = jQuery(this).data("element");
-            new Ajax.Request("<?php echo $this->getUrl('shipping/shipping/saveMethod') ?>", {
-                method: 'Post',
-                parameters: {key: $dat},
-                onComplete: function(transport) {
-                    //console.log(transport.responseText);
-                }
-            });
         });
-
     </script>
 <?php endif; ?>

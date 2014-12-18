@@ -29,38 +29,41 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
     public function collectRates(Mage_Shipping_Model_Rate_Request $request) {
         /** @var Mage_Shipping_Model_Rate_Result $result */
         $result = Mage::getModel('shipping/rate_result');
+        
+        Mage::getSingleton('core/session')->setPickupointKey();
+        
+        //set company shipping price
         $result->append($this->_getCompanyRate());
+        
+        //get product total quantity
+        $totalQuantity = Mage::getModel('checkout/cart')->getQuote()->getItemsQty();
+        $result->append($this->_getPickupPoints($totalQuantity));
+
+        //set home shipping price
+        $result->append($this->_getHomeRate());
 
         //get billing information
         $cart = Mage::getSingleton('checkout/cart');
         $quote = $cart->getQuote();
         $shippingAddress = $quote->getShippingAddress();
         $zip = $shippingAddress->getPostcode();
-
-        $flag = 'shippingguid';
-        $ratexml = $this->getBringAPIData($zip, $flag);
-        foreach ($ratexml->Product as $element) {
-            $result->append($this->_getHomeRate($element));
+        $pickPoints = Mage::getSingleton('core/session')->getPickPoints();
+        if (empty($pickPoints)) {
+            $flag = 'pickuppoint';
+            $pickxml = $this->getBringAPIData($zip, $flag);
+            $pickupPoints = array();
+            foreach ($pickxml->pickupPoint as $element) {
+                $element = $this->xml2array($element);
+                $data = array();
+                $data['id'] = $element['id'];
+                $data['name'] = $element['name'];
+                $data['postalCode'] = $element['postalCode'];
+                $data['address'] = $element['address'];
+                $data['city'] = $element['city'];
+                $pickupPoints[] = $data;
+            }
+            Mage::getSingleton('core/session')->setPickPoints($pickupPoints);
         }
-
-        $result->append($this->_getDefualtPickuppoint($element));
-
-
-        $flag = 'pickuppoint';
-        $pickxml = $this->getBringAPIData($zip, $flag);
-        $pickupPoints = array();
-
-        foreach ($pickxml->pickupPoint as $element) {
-            $element = $this->xml2array($element);
-            $data = array();
-            $data['id'] = $element['id'];
-            $data['name'] = $element['name'];
-            $data['postalCode'] = $element['postalCode'];
-            $data['address'] = $element['address'];
-            $data['city'] = $element['city'];
-            $pickupPoints[] = $data;
-        }
-        Mage::getSingleton('core/session')->setPickPoints($pickupPoints);
         return $result;
     }
 
@@ -99,20 +102,19 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
      *
      * @return Mage_Shipping_Model_Rate_Result_Method
      */
-    protected function _getHomeRate($element) {
-
+    protected function _getHomeRate() {
         $this->_allowedMethods[] = array(
-            $element->ProductId . '_home' => $element->GuiInformation->DisplayName,
+            'home' => Mage::helper('checkout')->__('Delivery to home address'),
         );
+        $price = Mage::helper('confianz_shipping')->getHomedeliveryPrice();
         /** @var Mage_Shipping_Model_Rate_Result_Method $rate */
         $rate = Mage::getModel('shipping/rate_result_method');
         $rate->setCarrier($this->_code);
         $rate->setCarrierTitle($this->getConfigData('title'));
-        $rate->setMethod($element->ProductId . '_home');
-        $rate->setMethodTitle($element->GuiInformation->DisplayName);
-        $rate->setPrice($element->Price->PackagePriceWithAdditionalServices->AmountWithVAT);
+        $rate->setMethod('delivery_to_home');
+        $rate->setMethodTitle(Mage::helper('checkout')->__('Delivery to home address'));
+        $rate->setPrice($price);
         $rate->setCost(0);
-
         return $rate;
     }
 
@@ -128,9 +130,6 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
         );
         /** @var Mage_Shipping_Model_Rate_Result_Method $rate */
         $rate = Mage::getModel('shipping/rate_result_method');
-
-
-
         $rate->setCarrier($this->_code);
         $rate->setCarrierTitle($this->getConfigData('title'));
         $rate->setMethod('method_company');
@@ -151,7 +150,6 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
         $ratexml = $this->getBringAPIData($zip, $flag);
         $pickupPoints = array();
         foreach ($ratexml->Product as $element) {
-
             $shippingMethod = $element->ProductId . '_pickuppoint';
             $data = array();
             $data['code'] = $this->_code;
@@ -161,7 +159,6 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
             $data['price'] = $element->Price->PackagePriceWithAdditionalServices->AmountWithVAT;
             //$data['price'] = 20;
             $data['zip'] = $zip;
-
             //setting session variable names
             $setPricevar = "setPrice" . $shippingMethod . '_' . $zip;
             $setTitlevar = "setTitle" . $shippingMethod . '_' . $zip;
@@ -170,7 +167,6 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
             // save price and title to session
             Mage::getSingleton('core/session')->$setPricevar($priceElements[0]);
             Mage::getSingleton('core/session')->$setTitlevar($titleElements[0]);
-
             $pickupPoints[] = $data;
         }
 
@@ -182,17 +178,25 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
      * @param type $element
      * @return type
      */
-    function _getPickupPoints($element) {
+    function _getPickupPoints($totalQuantity) {
         $this->_allowedMethods[] = array(
-            $element->ProductId . '_pickuppoint' => $element->GuiInformation->DisplayName,
+            $element->ProductId . '_pickuppoint' => Mage::helper('checkout')->__('Delivery to pickup point'),
         );
+        $price = Mage::helper('confianz_shipping')->getPickupPointPrice();
+        //Mage::log(print_r($price, true), null, 'shipping-price.log', true);
+        $minNumber = Mage::helper('confianz_shipping')->getMinProductNum();
+        //Mage::log(print_r($minNumber, true), null, 'shipping-price.log', true);
+        if($totalQuantity >= $minNumber ) {
+           $price = 0; 
+        }
+        
         /** @var Mage_Shipping_Model_Rate_Result_Method $rate */
         $rate = Mage::getModel('shipping/rate_result_method');
         $rate->setCarrier($this->_code);
         $rate->setCarrierTitle($this->getConfigData('title'));
-        $rate->setMethod($element->ProductId . '_pickuppoint');
-        $rate->setMethodTitle($element->GuiInformation->DisplayName);
-        $rate->setPrice($element->Price->PackagePriceWithAdditionalServices->AmountWithVAT);
+        $rate->setMethod('delivery_to_pickuppoint');
+        $rate->setMethodTitle(Mage::helper('checkout')->__('Delivery to pickup point'));
+        $rate->setPrice($price);
         $rate->setCost(0);
         return $rate;
     }
@@ -238,6 +242,7 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
         $rate->setCost(0);
         return $rate;
     }
+
     /**
      * 
      * @param type $xmlObject

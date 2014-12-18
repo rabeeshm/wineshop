@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Shipping controller class
  * @author Rabeesh <rabeesh@confianzit.biz>
@@ -9,12 +10,16 @@ class Confianz_Shipping_ShippingController extends Mage_Core_Controller_Front_Ac
         $carrierObject = Mage::getSingleton('confianz_shipping/carrier');
         $result = array();
         if ($_POST['postalCode'] != 0) {
-            $result = $carrierObject->setPickupPointShipping($_POST['postalCode'], 'shippingguid');
+            Mage::getSingleton('core/session')->setPickupointKey($_POST['postalCode']);
         }
-        echo $block = $this->getLayout()
-                ->createBlock('core/template')
-                ->setData('result', $result)
-                ->setTemplate('checkout/pickuppoints.phtml')->toHtml();
+        //echo $_POST['postalCode'];
+//        if ($_POST['postalCode'] != 0) {
+//            $result = $carrierObject->setPickupPointShipping($_POST['postalCode'], 'shippingguid');
+//        }
+//        echo $block = $this->getLayout()
+//                ->createBlock('core/template')
+//                ->setData('result', $result)
+//                ->setTemplate('checkout/pickuppoints.phtml')->toHtml();
     }
 
     /**
