@@ -1,0 +1,809 @@
+2014-12-18T06:25:24+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:25:24+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:25:30+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:25:30+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:25:31+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:25:31+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:26:53+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:26:53+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:26:53+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:26:53+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:27:10+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:27:10+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:27:10+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:27:10+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 201
+2014-12-18T06:27:10+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/wineshop/app/design/frontend/default/wineshop/template/checkout/onepage/shipping_method/available.phtml on line 97
+2014-12-18T06:28:19+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:28:19+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:28:19+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:28:19+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:28:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/wineshop/app/design/frontend/default/wineshop/template/checkout/onepage/shipping_method/available.phtml on line 97
+2014-12-18T06:28:59+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:28:59+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:28:59+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:28:59+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:28:59+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/wineshop/app/design/frontend/default/wineshop/template/checkout/onepage/shipping_method/available.phtml on line 97
+2014-12-18T06:29:35+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:29:35+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:29:49+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:29:49+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:30:15+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:30:15+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:30:15+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:30:15+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:31:10+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:31:10+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:31:10+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:31:10+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:31:32+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:31:32+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:31:32+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:31:32+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:31:52+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:31:52+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:31:52+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:31:52+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:33:24+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:33:24+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:33:24+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:33:24+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:34:14+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:34:14+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:34:14+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:34:14+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:34:34+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:34:34+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:34:34+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:34:34+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:34:56+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:34:56+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:34:56+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:34:56+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:35:25+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:35:25+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:35:25+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:35:25+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:39:37+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:39:37+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:39:37+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:39:37+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:40:31+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:40:31+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:40:31+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:40:31+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:41:01+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:41:01+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:41:01+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:41:01+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:43:27+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:43:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:43:27+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:43:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:44:12+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:44:12+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:44:12+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:44:12+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:45:18+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:45:18+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:45:18+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:45:18+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:46:07+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:46:07+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:46:07+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:46:07+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:46:31+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:46:31+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:46:31+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:46:31+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:47:25+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:47:25+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:47:25+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:47:25+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:48:30+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:48:30+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:48:30+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:48:30+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:04+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:04+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:04+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:04+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:38+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:38+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:38+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:38+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:56+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:56+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:56+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:56+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:49:56+00:00 ERR (3): Notice: Undefined variable: shippingCodePrice  in /var/www/wineshop/app/design/frontend/default/wineshop/template/checkout/onepage/shipping_method/available.phtml on line 30
+2014-12-18T06:50:42+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:50:42+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:50:42+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:50:42+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:52:04+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:52:04+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:52:04+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:52:04+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:52:56+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:52:56+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:52:56+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:52:56+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:53:59+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:53:59+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:53:59+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:53:59+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:54:47+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:54:47+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:54:47+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:54:47+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:55:57+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:55:57+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:55:57+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:55:57+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:58:26+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:58:26+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:58:27+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:58:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:59:00+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:59:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:59:00+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T06:59:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:03:44+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:03:44+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:03:44+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:03:44+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:14:36+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:14:36+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:14:37+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:14:37+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:14:42+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 598
+2014-12-18T07:14:42+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:14:42+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:15:31+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:15:31+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:15:31+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:15:31+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:15:37+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:15:37+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:16:25+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:16:25+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:16:26+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:16:26+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:16:34+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:16:34+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:16:39+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:16:39+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:16:43+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 598
+2014-12-18T07:16:43+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:16:43+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:16:54+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:16:54+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:17:19+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:17:19+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:17:27+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 598
+2014-12-18T07:17:27+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:17:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:17:48+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:17:48+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:17:55+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:17:55+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:18:17+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:18:17+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:18:30+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:18:30+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:19:07+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:19:07+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:19:07+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:19:07+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:19:10+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T07:19:10+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:19:10+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:19:15+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T07:19:15+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:19:15+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:19:21+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:19:21+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:19:26+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T07:19:26+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:19:26+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 202
+2014-12-18T07:21:58+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:21:58+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:21:58+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:21:58+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:22:02+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:22:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:22:07+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T07:22:07+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:22:07+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:27:23+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:27:23+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:27:23+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:27:23+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:31:27+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:31:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:31:27+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:31:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:32:38+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:32:38+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:32:38+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:32:38+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:32:48+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:32:48+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:32:54+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:32:54+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:32:54+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:32:54+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:33:01+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:33:01+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:33:01+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:33:01+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:33:35+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:33:35+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:33:35+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:33:35+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:35:00+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:35:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:35:00+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:35:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:35:50+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:35:50+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:35:50+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:35:50+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:46:45+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:46:45+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:46:45+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T07:46:45+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:09:54+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:09:54+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:09:54+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:09:54+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:11:05+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:11:05+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:11:05+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:11:05+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:15:15+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:15:15+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:15:16+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:15:16+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:16:02+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 187
+2014-12-18T08:16:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 187
+2014-12-18T08:16:02+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 187
+2014-12-18T08:16:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 187
+2014-12-18T08:16:15+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:16:15+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:16:15+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:16:15+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 185
+2014-12-18T08:22:19+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:22:19+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:22:19+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:22:19+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:22:24+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T08:22:25+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:22:25+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:22:32+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:22:32+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:22:32+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:22:32+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:22:59+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:22:59+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:23:02+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:23:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:26:27+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:26:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:26:28+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:26:28+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:26:36+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:26:36+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:28:05+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:28:05+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:28:05+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:28:05+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:28:10+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:28:10+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:28:15+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T08:28:15+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:28:15+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:31:49+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:31:49+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:31:50+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:31:50+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 3
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 4
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/layer/view.phtml on line 6
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/layer/view.phtml on line 12
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: bgHandle  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 457
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: bgSlider  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 461
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: bgRange  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 465
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: updateTextBoxPriceJs  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 377
+2014-12-18T08:32:12+00:00 ERR (3): Notice: Undefined variable: updateTextBoxPriceJs  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 388
+2014-12-18T08:32:14+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 3
+2014-12-18T08:32:14+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 4
+2014-12-18T08:32:15+00:00 ERR (3): Notice: Use of undefined constant php - assumed 'php'  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/view/media.phtml on line 35
+2014-12-18T08:32:19+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 3
+2014-12-18T08:32:19+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 4
+2014-12-18T08:32:19+00:00 CRIT (2): Not valid template file:frontend/base/default/template/ajax/checkout/cart/sidebar/default.phtml
+2014-12-18T08:32:19+00:00 ERR (3): Notice: Use of undefined constant php - assumed 'php'  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/view/media.phtml on line 35
+2014-12-18T08:32:34+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:32:34+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:32:48+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:32:48+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:32:56+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T08:32:56+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T08:32:56+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:28:19+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:28:19+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:28:25+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:28:25+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:28:33+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:28:33+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:28:33+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:02+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:02+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:06+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:32:06+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:06+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:22+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:22+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:22+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:22+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:25+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:32:26+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:26+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:39+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:39+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:39+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:39+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:42+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:32:42+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:32:42+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:33:23+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:33:23+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:33:23+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:33:23+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:33:26+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:33:27+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:33:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:33:44+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:33:44+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:33:44+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:33:44+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:33:47+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:33:47+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:33:47+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:34:36+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:34:36+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:34:36+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:34:36+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:34:41+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:34:41+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:34:41+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:35:00+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:35:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:35:00+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:35:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:35:03+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:35:03+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:35:03+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:38:28+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:38:28+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:38:28+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:38:28+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:38:31+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:38:31+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:38:31+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:39:13+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:39:13+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:39:13+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:39:13+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:39:16+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:39:16+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:39:16+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 3
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 4
+2014-12-18T09:39:51+00:00 CRIT (2): Not valid template file:frontend/base/default/template/ajax/checkout/cart/sidebar/default.phtml
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T09:39:51+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/layer/view.phtml on line 6
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/layer/view.phtml on line 12
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined variable: bgHandle  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 457
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined variable: bgSlider  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 461
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined variable: bgRange  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 465
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined variable: updateTextBoxPriceJs  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 377
+2014-12-18T09:39:52+00:00 ERR (3): Notice: Undefined variable: updateTextBoxPriceJs  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 388
+2014-12-18T09:39:56+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 3
+2014-12-18T09:39:56+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 4
+2014-12-18T09:39:56+00:00 CRIT (2): Not valid template file:frontend/base/default/template/ajax/checkout/cart/sidebar/default.phtml
+2014-12-18T09:39:56+00:00 ERR (3): Notice: Use of undefined constant php - assumed 'php'  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/view/media.phtml on line 35
+2014-12-18T09:40:03+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:40:03+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:40:03+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:40:03+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:40:06+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:40:06+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:40:06+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:42:25+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:42:25+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:42:25+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:42:25+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:42:29+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:42:29+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:42:29+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:46:54+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:46:54+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:46:54+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:46:54+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:46:57+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:46:57+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:46:57+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:49:02+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:49:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:49:02+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:49:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:49:05+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:49:05+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:49:05+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:49:58+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:49:58+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:49:58+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:49:58+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:50:01+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:50:01+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:50:01+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:50:26+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:50:26+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:50:26+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:50:26+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:50:28+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:50:29+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:50:29+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:51:02+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:51:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:51:02+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:51:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:51:04+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:51:05+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:51:05+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:51:39+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:51:39+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:51:39+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:51:39+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:51:42+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:51:42+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:51:42+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:52:14+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:52:14+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:52:14+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:52:14+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:52:17+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:52:17+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:52:17+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:53:13+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:53:13+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:53:13+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:53:13+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:53:16+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:53:16+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:53:16+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:53:41+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:53:41+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:53:41+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:53:41+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:53:43+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:53:43+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:53:43+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:55:11+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:55:11+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:55:11+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:55:11+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:55:14+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:55:14+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:55:14+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:57:47+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:57:47+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:57:47+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:57:47+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:57:50+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:57:50+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:57:50+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:58:33+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:58:33+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:58:33+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:58:33+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:58:35+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:58:36+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:58:36+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:59:00+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:59:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:59:00+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:59:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:59:03+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:59:03+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:59:03+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:59:35+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:59:35+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:59:35+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:59:35+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:59:38+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T09:59:38+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T09:59:38+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:00:02+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:00:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:00:02+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:00:02+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:00:04+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:00:05+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:00:05+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:00:56+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:00:56+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:00:56+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:00:56+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:00:58+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:00:59+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:00:59+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:01:37+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:01:37+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:01:37+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:01:37+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:01:40+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:01:40+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:01:40+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:05:00+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:05:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:05:00+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:05:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:05:03+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:05:03+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:05:03+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:05:53+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:05:53+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:05:53+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:05:53+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:05:56+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:05:56+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:05:56+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:06:40+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 3
+2014-12-18T10:06:40+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 4
+2014-12-18T10:06:40+00:00 CRIT (2): Not valid template file:frontend/base/default/template/ajax/checkout/cart/sidebar/default.phtml
+2014-12-18T10:06:40+00:00 ERR (3): Notice: Use of undefined constant php - assumed 'php'  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/view/media.phtml on line 35
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 3
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/design/frontend/default/wineshop/template/callouts/left_col.phtml on line 4
+2014-12-18T10:06:43+00:00 CRIT (2): Not valid template file:frontend/base/default/template/ajax/checkout/cart/sidebar/default.phtml
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T10:06:43+00:00 ERR (3): Notice: Undefined variable: _productNameStripped  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/product/list.phtml on line 31
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/layer/view.phtml on line 6
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/design/frontend/default/wineshop/template/catalog/layer/view.phtml on line 12
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: max  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 47
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined index: min  in /var/www/wineshop/app/code/community/Magehouse/Slider/Model/Catalog/Layer.php on line 57
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined variable: bgHandle  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 457
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined variable: bgSlider  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 461
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined variable: bgRange  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 465
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined variable: updateTextBoxPriceJs  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 377
+2014-12-18T10:06:44+00:00 ERR (3): Notice: Undefined variable: updateTextBoxPriceJs  in /var/www/wineshop/app/code/community/Magehouse/Slider/Block/Catalog/Layer/Filter/Price.php on line 388
+2014-12-18T10:07:14+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:07:14+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:07:14+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:07:14+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:07:17+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:07:17+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:07:17+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:11:26+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:11:26+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:11:27+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:11:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:11:29+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:11:29+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:11:29+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:11:40+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:11:40+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:11:40+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:11:40+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:11:43+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:11:43+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:11:43+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:13:16+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:13:16+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:13:16+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:13:16+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:13:18+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:13:18+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:13:21+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:13:21+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:13:21+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:14:15+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:14:15+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:14:15+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:14:15+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:14:18+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:14:19+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:14:19+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:15:58+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:15:58+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:15:59+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:15:59+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:01+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:16:01+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:01+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:05+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:05+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:26+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:26+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:27+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:29+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:16:29+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:29+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:47+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:47+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:47+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:47+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:50+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:16:50+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:16:50+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:19:19+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:19:19+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:19:20+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:19:20+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:19:22+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:19:22+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:19:22+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:20:09+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:20:09+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:20:09+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:20:09+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:20:12+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:20:12+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:20:12+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:22:58+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:22:58+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:22:58+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:22:58+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:23:00+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:23:00+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:23:00+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:23:13+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:23:13+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:23:18+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:23:18+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:23:18+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:24:33+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:24:33+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:24:33+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:41:15+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:41:15+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:41:15+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:41:15+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:41:18+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:41:18+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:41:18+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:41:57+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:41:57+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:42:00+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:42:01+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:42:01+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:42:49+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:42:49+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:42:49+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:42:49+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:42:52+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:42:52+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:42:52+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:44:21+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:44:21+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:44:21+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:44:21+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:44:23+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:44:24+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:44:24+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:45:54+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:45:54+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:45:54+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:45:54+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:45:57+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:45:57+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:45:57+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:46:38+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:46:38+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:46:41+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:46:41+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:46:41+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:47:24+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:47:24+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:47:24+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:47:24+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:47:27+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T10:47:27+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T10:47:27+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T11:30:41+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T11:30:41+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T11:30:46+00:00 ERR (3): Notice: Undefined variable: price  in /var/www/wineshop/app/code/local/Mage/Checkout/Model/Type/Onepage.php on line 585
+2014-12-18T11:30:46+00:00 ERR (3): Notice: Undefined variable: element  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
+2014-12-18T11:30:46+00:00 ERR (3): Notice: Trying to get property of non-object  in /var/www/wineshop/app/code/local/Confianz/Shipping/Model/Carrier.php on line 183
