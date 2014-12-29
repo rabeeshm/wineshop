@@ -7,7 +7,7 @@
 class Confianz_Shipping_Helper_Data extends Mage_Core_Helper_Abstract {
 
     const XML_MIN_PRODUCT_NUMBER = 'carriers/confianz_shipping/min_product_number';
-    const XML_SHIPPINGGUID_API_URL = 'carriers/confianz_shipping/shippingguide_api_url';
+//    const XML_SHIPPINGGUID_API_URL = 'carriers/confianz_shipping/shippingguide_api_url';
     const XML_PICKUP_API_URL = 'carriers/confianz_shipping/pickup_api_url';
     const XML_CLIENT_URL = 'carriers/confianz_shipping/client_url';
     const XML_SHIPPING_FROM_PIN = 'carriers/confianz_shipping/shipping_from_pin';
@@ -28,9 +28,9 @@ class Confianz_Shipping_Helper_Data extends Mage_Core_Helper_Abstract {
      *
      * @return mixed
      */
-    public function getShippingguideApiUrl() {
-        return Mage::getStoreConfig(self::XML_SHIPPINGGUID_API_URL);
-    }
+//    public function getShippingguideApiUrl() {
+//        return Mage::getStoreConfig(self::XML_SHIPPINGGUID_API_URL);
+//    }
 
     /**
      * Get max weight of single item for express shipping

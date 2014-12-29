@@ -6,11 +6,16 @@
  */
 class Confianz_Shipping_ShippingController extends Mage_Core_Controller_Front_Action {
 
+    /**
+     * 
+     */
     public function ajaxAction() {
         $carrierObject = Mage::getSingleton('confianz_shipping/carrier');
         $result = array();
         if ($_POST['postalCode'] != 0) {
             Mage::getSingleton('core/session')->setPickupointKey($_POST['postalCode']);
+        } else {
+            Mage::getSingleton('core/session')->setPickupointKey();
         }
         //echo $_POST['postalCode'];
 //        if ($_POST['postalCode'] != 0) {
@@ -81,6 +86,11 @@ class Confianz_Shipping_ShippingController extends Mage_Core_Controller_Front_Ac
         }
     }
 
+    /**
+     * 
+     * @param type $quote
+     * @param type $price
+     */
     public function collectTotals($quote, $price) {
         $quoteid = $quote->getId();
         $shippingcode = 'confianz_shipping_defualt_pickuppoint';

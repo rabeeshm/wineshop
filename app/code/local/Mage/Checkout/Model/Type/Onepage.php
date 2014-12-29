@@ -573,7 +573,8 @@ class Mage_Checkout_Model_Type_Onepage {
 
         if ($shippingMethod == 'confianz_shipping_delivery_to_pickuppoint') {
             $pickupPoint = Mage::getSingleton('core/session')->getPickupointKey();
-            //Mage::log(print_r($shippingMethod, true), null, 'shipping-price.log', true);
+            Mage::getSingleton('core/session')->setSelectedPickupoint($pickupPoint);
+            //Mage::log(print_r($pickupPoint, true), null, 'shipping-price.log', true);
             if (empty($pickupPoint)) {
                 return array('error' => -1, 'message' => Mage::helper('checkout')->__('Please select pickup point.'));
             }
@@ -581,9 +582,6 @@ class Mage_Checkout_Model_Type_Onepage {
 
         $this->getQuote()->getShippingAddress()
                 ->setShippingMethod($shippingMethod);
-        Mage::log("from onpage", null, 'shipping-price.log', true);
-        Mage::log(print_r($price, true), null, 'shipping-price.log', true);
-
         $this->getCheckout()
                 ->setStepData('shipping_method', 'complete', true)
                 ->setStepData('payment', 'allow', true);

@@ -57,13 +57,15 @@
                     <span class="cart-price">
                     <?php endif; ?>
                     <!--edited by RMP-->
-                    <?php echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice() + $_item->getWeeeTaxAppliedAmount() + $_item->getWeeeTaxDisposition()); ?>
+                    <?php $_totalIncluTaxVat = $this->helper('checkout')->getPriceInclTax($_item) + $_item->getWeeeTaxAppliedAmount(); ?>
+                    <?php echo $this->helper('checkout')->formatPrice($_totalIncluTaxVat); ?>
+                    <?php //echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice() + $_item->getWeeeTaxAppliedAmount() + $_item->getWeeeTaxDisposition()); ?>
                     <?php //if (Mage::helper('weee')->typeOfDisplay($_item, array(0, 1, 4), 'sales') && $_item->getWeeeTaxAppliedAmount()): ?>
                     <?php //echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice()+$_item->getWeeeTaxAppliedAmount()+$_item->getWeeeTaxDisposition()); ?>
                     <?php //else: ?>
                     <?php //echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice()) ?>
                     <?php //endif; ?>
-
+                    
 
                 </span>
 
@@ -94,6 +96,7 @@
                         <div class="cart-tax-total" onclick="taxToggle('eunit-item-tax-details<?php echo $_item->getId(); ?>', this, 'cart-tax-total-expanded');">
                             <span class="nobr"><?php echo Mage::helper('weee')->__('Total'); ?>:<br /> 
                                 <!--edited by RMP-->
+                                
                                 <?php if (Mage::helper('weee')->typeOfDisplay($_item, array(0, 1, 4), 'sales') && $_item->getWeeeTaxAppliedAmount()): ?>
                                     <?php echo $this->helper('checkout')->formatPrice($_item->getCalculationPrice() + $_item->getWeeeTaxAppliedAmount() + $_item->getWeeeTaxDisposition()); ?>
                                 <?php else: ?>
@@ -167,7 +170,10 @@
                     <?php //else: ?>
                     <?php //echo $this->helper('checkout')->formatPrice($_item->getRowTotal()) ?>
                     <?php //endif; ?>
-                    <?php echo $this->helper('checkout')->formatPrice($_item->getRowTotal() + $_item->getWeeeTaxAppliedRowAmount() + $_item->getWeeeTaxRowDisposition()); ?>
+                    
+                    <?php //echo $this->helper('checkout')->formatPrice($_item->getRowTotal() + $_item->getWeeeTaxAppliedRowAmount() + $_item->getWeeeTaxRowDisposition()); ?>
+                    <?php $_SubtotalIncluTaxVat = $_totalIncluTaxVat * $this->getQty(); ?>
+                    <?php echo $this->helper('checkout')->formatPrice($_SubtotalIncluTaxVat); ?>
                 </span>
                 <?php if (Mage::helper('weee')->getApplied($_item)): ?>
 

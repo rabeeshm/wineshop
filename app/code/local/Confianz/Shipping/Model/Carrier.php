@@ -29,12 +29,12 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
     public function collectRates(Mage_Shipping_Model_Rate_Request $request) {
         /** @var Mage_Shipping_Model_Rate_Result $result */
         $result = Mage::getModel('shipping/rate_result');
-        
+
         Mage::getSingleton('core/session')->setPickupointKey();
-        
+
         //set company shipping price
         $result->append($this->_getCompanyRate());
-        
+
         //get product total quantity
         $totalQuantity = Mage::getModel('checkout/cart')->getQuote()->getItemsQty();
         $result->append($this->_getPickupPoints($totalQuantity));
@@ -186,10 +186,10 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
         //Mage::log(print_r($price, true), null, 'shipping-price.log', true);
         $minNumber = Mage::helper('confianz_shipping')->getMinProductNum();
         //Mage::log(print_r($minNumber, true), null, 'shipping-price.log', true);
-        if($totalQuantity >= $minNumber ) {
-           $price = 0; 
+        if ($totalQuantity >= $minNumber) {
+            $price = 0;
         }
-        
+
         /** @var Mage_Shipping_Model_Rate_Result_Method $rate */
         $rate = Mage::getModel('shipping/rate_result_method');
         $rate->setCarrier($this->_code);
@@ -201,6 +201,10 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
         return $rate;
     }
 
+    /**
+     * 
+     * @return type
+     */
     public function getCode() {
         return $this->_code;
     }

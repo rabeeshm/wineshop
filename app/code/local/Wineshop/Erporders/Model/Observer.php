@@ -27,9 +27,14 @@ class Wineshop_Erporders_Model_Observer extends Mage_Sales_Model_Order_Api {
         $store_id = Mage::app()->getStore()->getData('store_id');
         $website = Mage::app()->getWebsite()->getCode();
         $orderIncrementId = $order_code;
-        
-        $result = $this->info($order_code);
-        
+        //Function call request for import_order_from_magento().
+        $selected_method = Mage::getSingleton('core/session')->getSelectedPickupoint();
+        //Mage::log(print_r($selected_method, true), null, 'shipment.log', true); exit;
+        $selected_method = explode("-", $selected_method);
+        $result['pickup_point']['id'] = $selected_method[1];
+        $result['pickup_point']['pinCode'] = $selected_method[0];
+        $result['result'] = $this->info($order_code);
+
         //Getting stored configurations..
         $server = Mage::getStoreConfig('erporders/erpconfig/servername');
         $port = Mage::getStoreConfig('erporders/erpconfig/port');
@@ -51,9 +56,8 @@ class Wineshop_Erporders_Model_Observer extends Mage_Sales_Model_Order_Api {
                 'password' => $pwd,
             );
             $uid = $client->call('login', $login_param);
-            //Function call request for import_order_from_magento().
-            $selected_method = Mage::getSingleton('core/session')->getSelectedMethod();
-            $result['selected_method'] = $selected_method;
+
+            Mage::log(print_r($result, true), null, 'shipment.log', true); //exit;
             $params = array($db, $uid, $pwd, 'sale.order', 'import_order_from_magento', $website, $order_code, $store_id, $result);
             $client_object->call('execute', $params);
         } catch (Zend_XmlRpc_Client_FaultException $e) {
