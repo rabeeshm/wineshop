@@ -29,41 +29,49 @@ class Confianz_Shipping_Model_Carrier extends Mage_Shipping_Model_Carrier_Abstra
     public function collectRates(Mage_Shipping_Model_Rate_Request $request) {
         /** @var Mage_Shipping_Model_Rate_Result $result */
         $result = Mage::getModel('shipping/rate_result');
-
         Mage::getSingleton('core/session')->setPickupointKey();
-
         //set company shipping price
         $result->append($this->_getCompanyRate());
-
-        //get product total quantity
-        $totalQuantity = Mage::getModel('checkout/cart')->getQuote()->getItemsQty();
-        $result->append($this->_getPickupPoints($totalQuantity));
-
-        //set home shipping price
-        $result->append($this->_getHomeRate());
-
         //get billing information
         $cart = Mage::getSingleton('checkout/cart');
         $quote = $cart->getQuote();
         $shippingAddress = $quote->getShippingAddress();
         $zip = $shippingAddress->getPostcode();
-        $pickPoints = Mage::getSingleton('core/session')->getPickPoints();
-        if (empty($pickPoints)) {
-            $flag = 'pickuppoint';
-            $pickxml = $this->getBringAPIData($zip, $flag);
-            $pickupPoints = array();
-            foreach ($pickxml->pickupPoint as $element) {
-                $element = $this->xml2array($element);
-                $data = array();
-                $data['id'] = $element['id'];
-                $data['name'] = $element['name'];
-                $data['postalCode'] = $element['postalCode'];
-                $data['address'] = $element['address'];
-                $data['city'] = $element['city'];
-                $pickupPoints[] = $data;
+        if (!empty($zip)) {
+            $pickxml = '';
+            $pickPoints = Mage::getSingleton('core/session')->getPickPoints();
+            $prevZip = Mage::getSingleton('core/session')->getZipCode();
+            if (empty($pickPoints) || ($zip != $prevZip) ) {
+                $flag = 'pickuppoint';
+                $pickupPoints = array();
+                $pickxml = $this->getBringAPIData($zip, $flag);
+                foreach ($pickxml->pickupPoint as $element) {
+                    $element = $this->xml2array($element);
+                    $data = array();
+                    $data['id'] = $element['id'];
+                    $data['name'] = $element['name'];
+                    $data['postalCode'] = $element['postalCode'];
+                    $data['address'] = $element['address'];
+                    $data['city'] = $element['city'];
+                    $pickupPoints[] = $data;
+                }
+                if (!empty($pickupPoints)) {
+                    Mage::getSingleton('core/session')->setPickPoints($pickupPoints);
+                } else {
+                    Mage::getSingleton('core/session')->setPickPoints('empty');
+                }
             }
-            Mage::getSingleton('core/session')->setPickPoints($pickupPoints);
+            Mage::getSingleton('core/session')->setZipCode($zip);
+            $newPickPoints = Mage::getSingleton('core/session')->getPickPoints();
+            if ($newPickPoints != 'empty') {
+                //get product total quantity
+                $totalQuantity = Mage::getModel('checkout/cart')->getQuote()->getItemsQty();
+                $result->append($this->_getPickupPoints($totalQuantity));
+            }
         }
+        //set home shipping price
+        $result->append($this->_getHomeRate());
+
         return $result;
     }
 

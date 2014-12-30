@@ -60,7 +60,7 @@ class Wineshop_Erporders_Model_Observer extends Mage_Sales_Model_Order_Api {
             );
             $uid = $client->call('login', $login_param);
 
-            Mage::log(print_r($result, true), null, 'shipment.log', true); //exit;
+            //Mage::log(print_r($result, true), null, 'shipment.log', true); //exit;
             $params = array($db, $uid, $pwd, 'sale.order', 'import_order_from_magento', $website, $order_code, $store->group_id, $result);
             $client_object->call('execute', $params);
         } catch (Zend_XmlRpc_Client_FaultException $e) {
