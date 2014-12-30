@@ -63,7 +63,7 @@
             </openerpconnector>
         </helpers>
         
-        <events>
+<!--        <events>
           
              <sales_order_place_after>
                 <observers>
@@ -76,7 +76,7 @@
             </sales_order_place_after>
             
             
-        </events>
+        </events>-->
 
         
     </global>
